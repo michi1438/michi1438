@@ -1,0 +1,5 @@
+
+#!/bin/cat 
+
+Battery voltage is determined by micro-thin layers on the two battery plates. All batteries always contain two separate independent batteries inside them well, they're actually called half-cells, not batteries. One of these appears at the surface of the positive plate, while the other is at the surface of the negative. The "terminals" of each half-cell are a metal wire on one side, and an electrolyte-filled volume on the other perhaps use a water-hose terminal instead of a water tank. For example we can have a zinc half-cell with zinc chloride solution, a lead half-cell with acid, lithium half-cell, carbon, etc. Each metal creates its own special voltage, and it's possible to mix and match the half-cells. Normally we connect the two half-cells back-to-back in series, with the water-conductors touching.
+

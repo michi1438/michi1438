@@ -1,0 +1,3 @@
+echo $SHLVL
+echo $BASH_SUBSHELL
+
