@@ -13,7 +13,7 @@ Nationality
 
 >American and French, Bilingual, Bicultural  
 
-## Search for work as from August, 2022
+## Search for work as from January, 2023
 
 Currently  
 
