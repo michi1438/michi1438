@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/23 12:41:15 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/11 19:54:18 by xbeheydt         ###   ########.fr        #
+#    Updated: 2023/01/26 10:28:01 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,12 +24,12 @@ OBJ = $(SRC:.c=.o)
 
 OBJB = $(SRCB:.c=.o)
 
-test: re 
-	$(CC) $(CFLAGS) $(OBJ) $(OBJB) gnltester.c -o TEST
+#test: re 
+#	$(CC) $(CFLAGS) $(OBJ) $(OBJB) gnltester.c -o TEST
 
-all: $(NAME) 
+all: bonus 
 	
-$(NAME): $(OBJ) bonus
+$(NAME): $(OBJ) 
 	ar rc $(NAME) $(OBJ)
 
 bonus: $(OBJ) $(OBJB)
