@@ -6,7 +6,7 @@
 #    By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/02 15:48:03 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/26 10:53:05 by mguerga          ###   ########.fr        #
+#    Updated: 2023/01/28 16:52:53 by xbeheydt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ OBJ = $(SRC:.c=.o)
 
 CC = gcc
 
-CFLAGS = 
+CFLAGS = -Werror -Wextra -Wall
 
 all: $(NAME)
 

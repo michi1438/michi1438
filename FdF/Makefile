@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/26 21:46:53 by mguerga          ###   ########.fr        #
+#    Updated: 2023/01/28 16:51:52 by xbeheydt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,10 +30,10 @@ libf_printf_gnl:
 	mv ./ft_libft_printf_gnl/libftprintf.a ./fdf.a
 
 $(NAME): libf_printf_gnl $(OBJ)
-	ar rc $(NAME) $(OBJ)
+	ar rc $(NAME)
 
-test: $(NAME)
-	$(CC) $(CFLAGS) $(OBJ) $(NAME) fdf_parser.c -o fdf
+#test: $(NAME)
+#	$(CC) $(CFLAGS) $(OBJ) $(NAME) fdf_parser.c -o fdf
 
 clean:
 	rm -rf *.o test
