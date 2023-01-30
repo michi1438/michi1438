@@ -5,39 +5,43 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/30 10:34:28 by mguerga          ###   ########.fr        #
+#    Created: 2022/12/23 12:41:15 by mguerga           #+#    #+#              #
+#    Updated: 2023/01/26 10:28:01 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fdf
+NAME = get_next_line
 
 CC = gcc
 
-CFLAGS = -Werror -Wall -Wextra
+CFLAGS = -Werror -Wall -Wextra -g -fsanitize=address
 
-SRC = 
+SRC = get_next_line.c get_next_line_utils.c
+
+SRCB = get_next_line_utils_bonus.c get_next_line_bonus.c
 
 OBJ = $(SRC:.c=.o)
 
-#test: re
-#	$(CC) $(CFLAGS) $(OBJ) libft/*.o fdftester.c -o test
+OBJB = $(SRCB:.c=.o)
 
-all: $(NAME)
+#test: re 
+#	$(CC) $(CFLAGS) $(OBJ) $(OBJB) gnltester.c -o TEST
 
-libf_printf_gnl:
-	make -C ./ft_libft_printf_gnl
+all: bonus 
+	
+$(NAME): $(OBJ) 
+	ar rc $(NAME) $(OBJ)
 
-$(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) fdf_parser.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_mms_20191025_beta/ -lmlx -o $(NAME)
+bonus: $(OBJ) $(OBJB)
+	ar rc $(NAME) $(OBJB) $(OBJ)
 
 clean:
-	rm -rf *.o test
-	make clean -C ./ft_libft_printf_gnl
+	rm -f *.o
 
 fclean: clean
-	rm -rf $(NAME) fdf
-	make fclean -C ./ft_libft_printf_gnl
+	rm -f ${NAME} 
+	rm -f TEST
+
 
 re: fclean
 	make all
