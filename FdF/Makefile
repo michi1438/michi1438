@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/30 10:34:28 by mguerga          ###   ########.fr        #
+#    Updated: 2023/01/30 17:49:07 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
 
 $(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) fdf_parser.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_mms_20191025_beta/ -lmlx -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) square.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	rm -rf *.o test
