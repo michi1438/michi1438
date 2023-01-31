@@ -6,17 +6,17 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/31 15:21:53 by mguerga          ###   ########.fr        #
+#    Updated: 2023/01/31 17:02:44 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = shape 
+NAME = fdf 
 
 CC = gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
-SRC = shape_utils.c 
+SRC = fdf_utils.c 
 
 OBJ = $(SRC:.c=.o)
 
@@ -29,7 +29,7 @@ libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
 
 $(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) gradients.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework AppKit -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	rm -rf *.o test
