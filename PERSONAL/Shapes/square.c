@@ -6,11 +6,11 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 12:07:29 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/30 18:01:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/01/31 10:51:55 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "square.h"
+#include "shapes.h"
 
 int	main(void)
 {
@@ -35,16 +35,6 @@ int	main(void)
 	}
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
 	mlx_loop(mlx);
-}
-
-void	my_mlx_pixel_put(t_data *img, int x, int y, int color)
-{
-	int	offset;
-	char	*dst;
-
-	offset = (img->line_length * x + (img->bits_per_pixels / 8) * y);
-	dst = img->addr + offset;
-	*(unsigned int *)dst = color; 
 }
 
 /*
