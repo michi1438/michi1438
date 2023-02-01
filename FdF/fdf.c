@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 16:25:28 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/31 16:56:23 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/01 17:36:05 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main(int ac, char **av)
 	int	fd;
 	char *nline;
 
+	ft_printf("%d\n", pow(2, 2));
 	if (fdf_parser(ac, av) == 0)
 		return (0);
 	fd = open(av[1], O_RDONLY);

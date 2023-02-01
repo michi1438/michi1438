@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/31 17:00:57 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/01 17:35:43 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FDF_H
 
 #include "ft_libft_printf_gnl/ft_libft_printf_gnl.h"
-#include "minilibx_macos/mlx.h"
+#include "minilibx-linux/mlx.h"
 #include <math.h>
 
 typedef struct s_data {
