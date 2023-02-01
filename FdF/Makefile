@@ -6,17 +6,17 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/26 21:46:53 by mguerga          ###   ########.fr        #
+#    Updated: 2023/01/31 17:02:44 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fdf.a
+NAME = fdf 
 
 CC = gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
-SRC = 
+SRC = fdf_utils.c 
 
 OBJ = $(SRC:.c=.o)
 
@@ -27,13 +27,9 @@ all: $(NAME)
 
 libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
-	mv ./ft_libft_printf_gnl/libftprintf.a ./fdf.a
 
 $(NAME): libf_printf_gnl $(OBJ)
-	ar rc $(NAME) $(OBJ)
-
-test: $(NAME)
-	$(CC) $(CFLAGS) $(OBJ) $(NAME) fdf_parser.c -o fdf
+	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
 clean:
 	rm -rf *.o test
