@@ -588,4 +588,22 @@ The question therefore remains, is there such a thing as cheating your work into
 is it less honorable, or is "cheating"(drugs or music while running) knowing the game and playing
 it to the fullest ?
 
+# 02/02/2023
+I'm thinking somewhat of my childhood, I was probably about 15 years old, we lived near Bandol, 
+close to the beach in provence. Those years I should of lived, as the start of a young man's life 
+all seem to me as the youngest, most innocent, barely conscious times of my life!
+I remember specificaly the surroundings of Saint Cyr les Lecques, it had a walk-way to it's side 
+that I idolise today, it went, (what I believed back then to be steep terrain), a cliff ending on
+the water front, whith big and sharp rocks to form a beach, this with a few steps back may mean 
+that they fell often and that this beach was probably a dangerous place to go. It was also one 
+of the pretiest sight of my teens. I remember going on my bicycle early in the morning to this 
+heavenly place with a throwable kodak camera, that ride probably took me around 2h and was of 
+~20km (that might be wrong) from that day I don't have many images stored in my head, I knew 
+it was one of the truly georgeous sight of my young age, you could imagine the sunrise on the sea being 
+sifted by the Pinus pinea needles, a sharp cliffy scenary and the sens of adventure of a young teen. 
+I think this is what acted the most on what I remember of those days...
+I also believe this is what I see as a grown up in the stories of Sylvain Tesson, Robert Macfarlane, 
+and Nicolas Bouvier, they all tickle my (now appearing more poetique) kid need for adventure...
+
+
 
