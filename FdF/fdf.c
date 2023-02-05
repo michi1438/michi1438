@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 16:25:28 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/05 18:17:54 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/05 19:10:47 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,13 @@ int	ft_putlineto_tab(int fd, int lines, int komas, int lonely_ret)
 	int		x;
 	int		valcnt;
 	int		*tab;
+	int		wcount;
 	char	*nline;
 
 	valcnt = 0;
 	nline = get_next_line(fd);
-	tab = malloc(komas + lines * sizeof(int) * word_count(ft_split(nline, ' ')));
+	wcount = word_count(ft_split(nline, ' '));
+	tab = malloc(komas + lines * sizeof(int) * wcount);
 	while (nline != NULL)
 	{
 		x = 0;
@@ -69,7 +71,7 @@ int	ft_putlineto_tab(int fd, int lines, int komas, int lonely_ret)
 		}	
 		nline = replace_nline(fd, nline);
 	}
-	ft_printf("splt_sz; %d\ntot_sz; %d\nmal_sz; %d\n", x, valcnt, sizeof(tab));
+	ft_printf("splt_sz; %d\ntot_sz; %d\nmal_sz; %d\n", x, valcnt, komas + lines * wcount);
 	if ((valcnt - komas) % (x - lonely_ret) != 0)
 	{
 		ft_printf("error, the lines are not all of the same length...\n");
