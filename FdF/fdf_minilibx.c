@@ -1,37 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_utils.c                                        :+:      :+:    :+:   */
+/*   fdf_minilibx.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 20:33:13 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/04 20:36:20 by mguerga          ###   ########.fr       */
+/*   Created: 2023/02/04 20:29:51 by mguerga           #+#    #+#             */
+/*   Updated: 2023/02/04 20:31:04 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-char	*replace_nline(int fd, char *nline)
+void	my_mlx_pixel_put(t_data *img, int x, int y, int color)
 {
-	char	*nptr;
+	int	offset;
+	char	*dst;
 
-	nptr = get_next_line(fd);
-	free (nline);
-	return (nptr);
-}
-
-int	contain_nonnum(char *word)
-{
-	int	i;
-
-	i = 0;
-	while (ft_isdigit(word[i]) || word[i] == '-')
-		i++;
-	if (word[i] == '\0' || word[i] == '\n')
-		return (0);
-	else if (word[i] == ',')
-		return (1);
-	else
-		return (2);
+	offset = (img->line_length * y + (img->bits_per_pixels/8) * x);
+	dst = img->addr + offset;
+	*(unsigned int *)dst = color;
 }

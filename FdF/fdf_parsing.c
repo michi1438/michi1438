@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_utils.c                                        :+:      :+:    :+:   */
+/*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 20:33:13 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/04 20:36:20 by mguerga          ###   ########.fr       */
+/*   Created: 2023/02/04 20:37:57 by mguerga           #+#    #+#             */
+/*   Updated: 2023/02/04 20:39:53 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-char	*replace_nline(int fd, char *nline)
+int	fdf_parser(int ac, char **av)
 {
-	char	*nptr;
+	char	*isfdf;
 
-	nptr = get_next_line(fd);
-	free (nline);
-	return (nptr);
-}
-
-int	contain_nonnum(char *word)
-{
-	int	i;
-
-	i = 0;
-	while (ft_isdigit(word[i]) || word[i] == '-')
-		i++;
-	if (word[i] == '\0' || word[i] == '\n')
+	if (ac != 2)
+	{
+		ft_printf("error, expected 1 arg\n");
 		return (0);
-	else if (word[i] == ',')
-		return (1);
-	else
-		return (2);
+	}
+	isfdf = ft_strnstr(av[1], ".fdf", 1000);
+	if (isfdf == NULL)
+	{
+		ft_printf("error, make sure your arg is a .fdf file\n");
+		return (0);
+	}
+	return (1);
 }

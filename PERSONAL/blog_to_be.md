@@ -605,5 +605,64 @@ I think this is what acted the most on what I remember of those days...
 I also believe this is what I see as a grown up in the stories of Sylvain Tesson, Robert Macfarlane, 
 and Nicolas Bouvier, they all tickle my (now appearing more poetique) kid need for adventure...
 
+# 03/02/2023
+It shouldn't take me very long to find a theme every morning, I can write on any subject as long as 
+I write, knowing little or nothing is going to be good. So why do I start writting again ?
+I mean for this small 30 minutes exercise to be a time for my thoughts to coalesce and sharpen, 
+It is a good way to practice a different type of typing (the "creative" one), learn a little english,
+and spelling (altought this would never be the main point for me). It is also very important to 
+link different steps in a routine before any progress is made on the "self improvement" that I would 
+like to self impose, but I keep postponing... I think those lines summerize my thougths on the subject.
+For the same reason, as part of a plan for self improvement, I've not been biting my nails, I wouldn't 
+stop smoking completely because this is a bit of the crux of the list but I won't make it an automatic 
+responce. going back to math every evening for about 1 hour, before reading before falling a sleep, 
+no more movies before going to bed no more podcast to fall a sleep to, if I have to take a break from
+work it should be outside or something thoughtful not games, maybe chess, guitar is a good one, 
+a new project turning computers into servers, building a kite, speed typing or reading...
+In the same vein no more added sugars keep food plain and the final aim is to taste more subtleties
+and be more endurant. 
 
+On a different subject, I'll end with an anecdote, something I found intresting, the gecko sticks to 
+a glass surface in vertical position or upside down position of a horizontal pane of glass by the 
+Van der Waals effect, what is suprising is that there is no liquide or use of surface tention...
+The phenomena can be conpared to trying to pull apart two books whose pages have been intertwined, 
+it's all friction...
 
+# 04/02/2023
+The history of Rome, what I've remembered so far. 
+The hard part about Rome's history is to discern the truth from the legends whom are numerous, for 
+example there had been settlements in the regions of rome for 5000 years, the actual establishement 
+of rome is obscured by the legend of Romulus and Remus, According to this legend the two brother are 
+decsendents of Mars(Ares in greek mythology), and a Trojan war hero Aeneas, they were fed by a she wolf 
+after being abandoned they built a city, got in an argument Romulus killed Remus, and named the city
+after himself, Rome. the city was said to accept men of all class, slaves or freemen, having many men 
+very few woman in the city, Romulus invited neighbor tribes to a feast then abducted many woman (this 
+is what is known as "The Rape of the Sabine Women". After this war was declared until they settled that 
+Titus Tatius the Sabine King would share the kingship with Romulus, whithin Rome 100 of the most noble 
+men were chosen to form the Roman senate "patres" (to be of advisory power to the king).
+From those patres where formed the patricians, Romulus then divided the population of Rome in to 3 
+military units of 100 called "centuries", the Ramnes, the Tities and Luceres. Then he divided the more 
+general population into 30 "Curiae", named after the women who had stopped the war between Romulus and 
+Tatius...
+
+# 05/02/2023
+More on the history of Rome, but a little context first, the city grew from small settlements on the
+Palatine Hill about 30km from the Tyrrhenian sea to the south of the Tiber, they were surrounded by 
+other settlements, mostly italic-speaking in Latium(plain of the Italian peninsula), the Sabines were 
+up the Tiber valley, the Umbrians to the north-east, Samnites to the south. All those Italic speakers 
+shared the peninsula with Etruscans to the North and Greeks in the South.
+After Romulus comes the 6 others of the "7 kings of Rome", Romulus had established Rome, it's Senate, 
+an Army and the first religious instutition. Then came Numa Pompilius reinforced the political and 
+religious backbone of Rome, and introduced the 12 month solar calendar.
+After him was Tullus Hostilius compared to his predecessor he was a fighter.
+Ancus Marcius is the 4th king of Rome, he defeated the Sabines...
+Tarquinius Priscus grew Rome a lot, including the Senate, brougth the Cloaca Maxima (one of the first 
+sewage system), and the Circus Maxima(the Chariot race stadium).
+Then came Servius Tulius, he established the Servian Tribes, a division of the Roman people, and a new 
+wall was errected around the city...
+Finally came Tarquinius Superbus, the last king of Rome, a conqueror, a colonist, he built the Optimus 
+Maximus(a temple of Jupiter(Zeus)), as a violent king and disrespectful of Roman custom and the Senate
+the people had then a pretty horrible vision of monarchy, they deposed and expelled Tarquinius and his 
+familly in 509BC, then established the Roman Republic with Lucius Junius Brutus and Lucius Tarquinius 
+Collatinus as Rome's first consuls. The term king(rex), held a negative conotation until the end of the 
+Roman Empire.

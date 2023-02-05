@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/01 17:21:38 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/04 20:28:54 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ CC = gcc
 
 CFLAGS = -Werror -Wall -Wextra
 
-SRC = fdf_utils.c 
+SRC = fdf_utils.c fdf_count.c fdf_minilibx.c fdf_parsing.c\
+	 fdf_test_utils.c
 
 OBJ = $(SRC:.c=.o)
 
