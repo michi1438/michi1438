@@ -666,3 +666,39 @@ the people had then a pretty horrible vision of monarchy, they deposed and expel
 familly in 509BC, then established the Roman Republic with Lucius Junius Brutus and Lucius Tarquinius 
 Collatinus as Rome's first consuls. The term king(rex), held a negative conotation until the end of the 
 Roman Empire.
+
+# 06/02/2023
+As a good sci-fi book theme, world inside a computer, imagine a tiny earth equivalent in some computer 
+people would get shrunk and sent in, everyone would hold a normal job but with out realizing it would
+be a simulation for a neural network, the power of the computer would surpass it's consumption because 
+you would only simulate a tiny world, there could be details as when those humans decide to travel out
+of there worlds they have a special advantageous vacation policy, a programer would become a part time
+sociologiste, and would sometimes have to go in and bribe politician to stear the workflow in a way.
+This would also solve at least for a time the overpopulation problem, it could be the principle in 
+general for that new world to reduce the consumption by shrinking down everything therefore little or
+no planetary exploration, ressource optimisation by using it inside a smaller context...
+This is a well of allegories and metaphores, may be of good use in a NaNoWriMo sort of thing.
+Since this has ran out, I feel like I made my point, we went this week end out to the chalune on skis
+with paragliders and it was hard the weigth plus the time, we had a small wind coming from the back 
+so trying to lift was sketchy, we started our expedition at 2pm finished around 6:30pm. 
+Once you fail with the paraglider, you need to pick yourself up untangle your skis boots, pick it up, 
+go back up the slope so you dont start over in the cliff, minding not to cut any strings with your 
+ski's edges. Every time it was close but failed for some reason 0 out of 4 tries, you then need to 
+fold it how ever you can, put back the 7+ kilos on your back and go back down before you really can't
+see anything, it is especialy dangerous on that icy, crusty, kneebreaking "snow".
+
+# 07/02/2023
+At this point in our Roman history, the roman republic, thing are a bit more factual and less prone to 
+interpretation, less legends. We enter the Roman Republic by overthrowing the Roman Kingdom in 509BC
+The Roman republic was primarly a mix of Latin and Etruscan but also in lesser proportionn the Sabine
+Oscan and Greek. Politicaly, it developed itself in near paralell to the direct democracy in Ancient 
+Greece, it consisted mainly of magistracies overseen by a senate... The 2 consuls were the top 
+magistrates. Allthough a small number of famillies monopolised the main magistracies, the Roman Republic
+is considered one of the first examples of representative democracy. They had to adapte instutionaly one
+example of that adaptation is instoration of promagistracies (consuls who had their role extended to go
+"rule" in conquered territories).
+The main ennemies of Rome came as Latin and Etruscan neighbours and the Gauls who are well know for the
+sack of Rome in 387BC (this was one hard hit on the Romans), to be precis the Gauls came from the 
+North-West of the Alps, what is now France, Switzerland, Southern Germany, Austria, and the Czech Republic.
+The sack is a story of its own, I need more context...
+
