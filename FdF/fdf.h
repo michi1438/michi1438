@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/06 19:08:57 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/07 15:39:37 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	my_mlx_pixel_put(t_data *img, int x, int y, int color);
 int fdf_parser(int ac, char **av);
 void	ft_putstr_fd(char *str, int fd);
 char	*replace_nline(int fd, char *nline);
-int	ft_putlineto_tab(int fd, int lines, int komas, int lonely_ret);
+int	ft_putlineto_tab(int fd, int lines, int lonely_ret);
 int	word_count(char **splited);
 int	line_count(int fd);
 int	koma_count(int fd);

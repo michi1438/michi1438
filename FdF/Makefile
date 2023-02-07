@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/04 20:28:54 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/07 15:03:22 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC = fdf_utils.c fdf_count.c fdf_minilibx.c fdf_parsing.c\
 
 OBJ = $(SRC:.c=.o)
 
-OS := $(uname)
+OS := $(shell uname)
 
 #test: re
 #	$(CC) $(CFLAGS) $(OBJ) libft/*.o fdftester.c -o test
@@ -31,8 +31,15 @@ all: $(NAME)
 libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
 
+ifeq ($(OS), Darwin)
 $(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -o $(NAME) -lm
+	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o $(NAME)
+endif
+ifeq ($(OS), Linux)
+$(NAME): libf_printf_gnl $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -LX11 -LXext -o $(NAME) -lm
+endif
+
 clean:
 	rm -rf *.o test
 	make clean -C ./ft_libft_printf_gnl
