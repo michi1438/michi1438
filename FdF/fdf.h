@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/05 18:11:28 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/06 19:08:57 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	line_count(int fd);
 int	koma_count(int fd);
 int	lonely_ret_count(int fd);
 int	contain_nonnum(char *word);
-void enum_tab(int *tab, int val_count, int x);
+void enum_tab(int *tab, int val_count, int wcount);
+unsigned int	ft_atohex(char *nptr);
 
 #endif

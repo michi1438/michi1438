@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 16:25:28 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/05 19:10:47 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/06 19:15:34 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	ft_putlineto_tab(int fd, int lines, int komas, int lonely_ret)
 			if (contain_nonnum(ft_split(nline, ' ')[x]) == 1)
 			{
 				tab[valcnt++] = ft_atoi(ft_split(ft_split(nline, ' ')[x], ',')[0]);
-				tab[valcnt++] = ft_atoi(ft_split(ft_split(nline, ' ')[x], ',')[1]);
+				tab[valcnt++] = ft_atohex(ft_split(ft_split(nline, ' ')[x], ',')[1]);
 			}
 			else
 			{
@@ -77,7 +77,7 @@ int	ft_putlineto_tab(int fd, int lines, int komas, int lonely_ret)
 		ft_printf("error, the lines are not all of the same length...\n");
 		exit(1);
 	}
-	enum_tab(tab, valcnt, x);
+	enum_tab(tab, valcnt, wcount);
 	free(nline);
 	return (fd);
 }
