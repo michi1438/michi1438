@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/07 15:03:22 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/08 01:49:44 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,10 +34,6 @@ libf_printf_gnl:
 ifeq ($(OS), Darwin)
 $(NAME): libf_printf_gnl $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o $(NAME)
-endif
-ifeq ($(OS), Linux)
-$(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -LX11 -LXext -o $(NAME) -lm
 endif
 
 clean:

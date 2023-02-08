@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 12:07:29 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/31 10:51:55 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/01/31 18:05:56 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,20 +36,5 @@ int	main(void)
 	mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
 	mlx_loop(mlx);
 }
-
-/*
-	if (ac != 2)
-	{
-		ft_printf("error, expected 1 arg\n");
-		return (0j
-	}
-	isfdf = ft_strnstr(av[1], ".fdf", 1000); 
-	if (isfdf == NULL)
-	{
-    		ft_printf("error, make sure your arg is a .fdf file\n");	
-		return (0);
-	}
-	return (1);
-}*/
 
 

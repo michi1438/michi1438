@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/07 15:39:37 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/08 19:22:07 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 #include "ft_libft_printf_gnl/ft_libft_printf_gnl.h"
 #include "minilibx-linux/mlx.h"
 #include <math.h>
+#include <errno.h>
+#define HEIGHT 1080
+#define WIDTH 1920
+#define ER_NONUM "error, the word contains a nonnum value \n"
+#define ER_RECT "error, the lines are not all of the same length...\n"
 
 typedef struct s_data {
 	void	*img;
@@ -38,5 +43,7 @@ int	lonely_ret_count(int fd);
 int	contain_nonnum(char *word);
 void enum_tab(int *tab, int val_count, int wcount);
 unsigned int	ft_atohex(char *nptr);
+void	start_graph(int wcount, int valcnt);
+void ft_err(char *err);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/01 18:22:29 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/07 15:07:39 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,8 +28,16 @@ all: $(NAME)
 libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
 
+OS := ${shell uname}
+
+ifeq ($(OS), Darwin)
 $(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) circle.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -o $(NAME) -lm
+	$(CC) $(CFLAGS) $(OBJ) circle.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework AppKit -o $(NAME)
+endif
+ifeq ($(OS), Linux)
+$(NAME): libf_printf_gnl $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) circle.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -LX11 -LXext -o $(NAME) -lm
+endif
 
 clean:
 	rm -rf *.o test
