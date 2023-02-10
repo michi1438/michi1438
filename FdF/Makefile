@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/08 01:49:44 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/09 21:27:48 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = fdf
 
 CC = gcc
 
-CFLAGS = -Werror -Wall -Wextra
+CFLAGS = -Werror -Wall -Wextra -g -fsanitize=address
 
 SRC = fdf_utils.c fdf_count.c fdf_minilibx.c fdf_parsing.c\
 	 fdf_test_utils.c
