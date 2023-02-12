@@ -702,3 +702,41 @@ sack of Rome in 387BC (this was one hard hit on the Romans), to be precis the Ga
 North-West of the Alps, what is now France, Switzerland, Southern Germany, Austria, and the Czech Republic.
 The sack is a story of its own, I need more context...
 
+# 11/02/2023
+By 338BC, the end of the Latin War, the Latins submitted to Roman rule. That came right after the First 
+Samnite war where the Romans had come to the rescue of Capua in Campania. The Latin War was won at the 
+battles of Vesuvius and Trifanum, this is one of the first territory expansion of the Romans, the Latin 
+leagues submitted to Roman rule or where wiped of the map... This is when the Second Samnite War began in 
+327BC. This War ended in 305BC at the Battle of Bovianum, the advantages of one group over the other was
+not decisive until 314 where Rome taking the upperside offered less and less to there peace terms.
+One year after the Battle Bovianum Rome had taken over most of the Samnite territory, but in 298BC the 
+Samnites rebelled and defeated a Roman army, this gave rise to a coalition of several previous enemies of 
+Rome, this war ended once more with Roman victory in 290BC, Rome decisively finished off the last part of 
+the Etruscan power in the region at the Battle of Populonia in Tuscany.
+The 4th century before BC is also a time marked by the forthcoming of the plebeians into the political 
+realm where they gained power until they finally had equal political rights with the patricians.
+In 400 BC the first plebian consular tribunes were elected, in 385BC the former consul and savior of the 
+besieged Rome, Marcus Manlius Capitolinus, is said to have repaid the debt of many plebeians by selling
+his own estate, the first patrician to do so. The growing unrest he had brought, got him sentenced to 
+death trialed under the pretext of seeking kingly power, he was thrown from the Tarpeian Rock.
+
+# 12/02/2023
+Today I'm wandering if you have a logical probleme or something to solve in general is it possible that
+your mind/brain helps you solve it uncounsciously or in your sleep. Beyond the funny aspect and the 
+complet lack of humility what does it mean, is there some truth to it, and how to help it ? 
+It would seem obvious enought that the probleme you are treating in that way are usually not very 
+pragmatical ones but more of the affective/emotional order, on the other hand you may sometimes get stuck 
+on a logical/hard-science problem with only one true answer, and not want to face it for emotional issues,
+, or have been stuck on it to long and realize your ideas to solve the probleme are becoming irrational
+in those cases it would make sense to go to sleep.
+In other words our brain would in the typical human biasses fashion, only help in decision making, or the 
+"what should I do when I wake up ?(more or less)", the harvard blogpost below says it is the way the brain
+links what stired you in your day and saves them in memory, for when night time falls it starts categorizing 
+and processing in the background with the aim to both get used to the idea and make a better or more 
+thoughtful answer, sleeping on it...
+If I bring this back on my experience all the dreams I did about a factual probleme where never solved in a 
+dream but they where always there as an abstract idea I can't solve, I'm guessing it is to familiarize my
+self with the idea of falling and having a problem that is to complicated for me... until you've spent enough
+time... 
+
+https://www.health.harvard.edu/blog/sleep-to-solve-a-problem-202105242463

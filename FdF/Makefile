@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/09 21:27:48 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/12 13:56:27 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = fdf
 
 CC = gcc
 
-CFLAGS = -Werror -Wall -Wextra -g -fsanitize=address
+CFLAGS = -Werror -Wall -Wextra # -g -fsanitize=address
 
 SRC = fdf_utils.c fdf_count.c fdf_minilibx.c fdf_parsing.c\
 	 fdf_test_utils.c
@@ -34,6 +34,10 @@ libf_printf_gnl:
 ifeq ($(OS), Darwin)
 $(NAME): libf_printf_gnl $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o $(NAME)
+endif
+ifeq ($(OS), Linux)
+$(NAME): libf_printf_gnl $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -lX11 -lXext	-o $(NAME)
 endif
 
 clean:

@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/07 15:07:39 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/12 14:05:16 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ $(NAME): libf_printf_gnl $(OBJ)
 endif
 ifeq ($(OS), Linux)
 $(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) circle.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -LX11 -LXext -o $(NAME) -lm
+	$(CC) $(CFLAGS) $(OBJ) circle.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -lX11 -lXext -o $(NAME) -lm
 endif
 
 clean:

@@ -10,7 +10,6 @@ syntax on
 set number
 set relativenumber
 set cursorline
-set cursorcolumn
 
 set shiftwidth=5
 set tabstop=5
@@ -21,7 +20,6 @@ set showcmd
 set showmode
 set showmatch
 set hlsearch
-
 
 set nowrap
 
@@ -66,8 +64,11 @@ inoremap hh <esc>
 let mapleader = "\\"
 nnoremap <leader>\ ``
 nnoremap <space> :
+nnoremap zz :w<CR>
+
 nnoremap o o<esc>
 nnoremap O O<esc>
+nnoremap <c-z> <nop>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h

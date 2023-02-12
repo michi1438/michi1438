@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/10 14:54:59 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/12 18:36:49 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 #include "minilibx-linux/mlx.h"
 #include <math.h>
 #include <errno.h>
-#define HEIGHT 1080
-#define WIDTH 1920
+#define HEIGHT 912
+#define WIDTH 1368
 #define ER_NONUM "error, the word contains a nonnum value \n"
 #define ER_RECT "error, the lines are not all of the same length...\n"
 #define ER_NOTFDF "error, make sure your arg is a .fdf file\n"
@@ -54,7 +54,7 @@ unsigned int	ft_atohex(char *nptr);
 void	start_graph(int wcount, int valcnt, int **tab);
 void ft_err(char *err);
 int	to_window_scale(int wcount, int valcnt);
-void	draw(int valcnt, int wcount, t_data *img, int **tab);
+void	draw(int i, t_data *img);
 void	filltab(int *x, int *valcnt, char *nline, int **tab);
 int	interact_mlx(int keycode, t_data *img);
 void	fill_sct_hook(int *wcount, int *valcnt, int **tab, t_data *img);
