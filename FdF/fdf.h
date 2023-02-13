@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/12 18:36:49 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/12 19:43:40 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 #include "minilibx-linux/mlx.h"
 #include <math.h>
 #include <errno.h>
-#define HEIGHT 912
-#define WIDTH 1368
+#define HEIGHT 1080 
+#define WIDTH 1920
 #define ER_NONUM "error, the word contains a nonnum value \n"
 #define ER_RECT "error, the lines are not all of the same length...\n"
 #define ER_NOTFDF "error, make sure your arg is a .fdf file\n"

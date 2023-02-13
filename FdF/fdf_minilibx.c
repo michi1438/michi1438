@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:29:51 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/12 18:33:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/13 12:13:56 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,6 +128,7 @@ void	draw(int i, t_data *img)
 				(img->tab)[1][e] = 0x00FF0000;
 			axis[0] = (WIDTH / 2) + (j - i) * ogscale;
 			axis[1] = (i + j - (img->tab)[0][e]) * ogscale / sqrt(2); 
+			if ((axis[0] >= 0 && axis[0] <= WIDTH) && (axis[1] >= 0 && axis[1] <= HEIGHT))
 			my_mlx_pixel_put(img, axis[0], axis[1], (img->tab)[1][e]);
 			e++;
 			j += 1;
