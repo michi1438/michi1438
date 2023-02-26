@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 16:25:28 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/10 14:49:59 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/21 20:59:06 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_putlineto_tab(int fd, int lines, int lonely_ret)
 
 	valcnt = 0;
 	nline = get_next_line(fd);
-	wcount  = word_count(ft_split(nline, ' '));
+	wcount = word_count(ft_split(nline, ' '));
 	tab[0] = malloc(lines * sizeof(int) * wcount);
 	tab[1] = malloc(lines * sizeof(int) * wcount);
 	while (nline != NULL)
@@ -49,12 +49,9 @@ int	ft_putlineto_tab(int fd, int lines, int lonely_ret)
 		nline = replace_nline(fd, nline);
 	}
 	free(nline);
-	ft_printf("splt_sz; %d\ntot_sz; %d\nmal_sz; %d\nlon_ret; %d\n", x, valcnt, lines * x - lonely_ret, lonely_ret);
 	if (valcnt % (x - lonely_ret) != 0)
 		ft_err(ER_RECT);
-//	enum_tab(tab[0], valcnt, x - (lonely_ret/lines));
 	ft_printf("\n");
-//	enum_tab(tab[1], valcnt, x - (lonely_ret/lines));
 	start_graph(wcount, valcnt, tab);
 	return (fd);
 }
@@ -63,7 +60,7 @@ void	filltab(int *x, int *valcnt, char *nline, int **tab)
 {
 	char	**splited;
 	char	**splited_2;
-	
+
 	splited = ft_split(nline, ' ');
 	while (splited[*x] != NULL)
 	{
@@ -71,7 +68,7 @@ void	filltab(int *x, int *valcnt, char *nline, int **tab)
 			ft_err(ER_NONUM);
 		if (contain_nonnum(splited[*x]) == 1)
 		{
-			splited_2 = ft_split(splited[*x], ',');;
+			splited_2 = ft_split(splited[*x], ',');
 			tab[0][*valcnt] = ft_atoi(splited_2[0]);
 			tab[1][(*valcnt)++] = ft_atohex(splited_2[1]);
 		}

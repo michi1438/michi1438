@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/02/12 13:56:27 by mguerga          ###   ########.fr        #
+#    Updated: 2023/02/22 19:59:32 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC = gcc
 CFLAGS = -Werror -Wall -Wextra # -g -fsanitize=address
 
 SRC = fdf_utils.c fdf_count.c fdf_minilibx.c fdf_parsing.c\
-	 fdf_test_utils.c
+	 fdf_test_utils.c fdf_hooks.c 
 
 OBJ = $(SRC:.c=.o)
 

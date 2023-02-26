@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/12 19:43:40 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/25 17:44:47 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,19 @@ typedef struct s_data {
 	void	*img;
 	void *win;
 	char *addr;
-	int	bits_per_pixels;
+	int	bpp;
 	int	line_length;
 	int	endian;
 // to call through hooks.
 	int	valcnt;
 	int	wcount;
 	int	**tab;
+	int	scaling;
+	int	x_axis;
+	int	y_axis;
 }			t_data;
 
-
+void	redo_img(t_data *img, int x, int y, int zoom);
 void	my_mlx_pixel_put(t_data *img, int x, int y, int color);
 int fdf_parser(int ac, char **av);
 void	ft_putstr_fd(char *str, int fd);
@@ -58,5 +61,9 @@ void	draw(int i, t_data *img);
 void	filltab(int *x, int *valcnt, char *nline, int **tab);
 int	interact_mlx(int keycode, t_data *img);
 void	fill_sct_hook(int *wcount, int *valcnt, int **tab, t_data *img);
+void	cardinal_displacement(int keycode, t_data *img, int *axis, int zoom);
+void	complet_lines(int *axis, t_data *img, int e);
+void	horizontal_line(t_data *img, int *axis, int e);
+void	vertical_line(t_data *img, int *axis, int e);
 
 #endif

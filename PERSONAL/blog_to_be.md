@@ -740,3 +740,108 @@ self with the idea of falling and having a problem that is to complicated for me
 time... 
 
 https://www.health.harvard.edu/blog/sleep-to-solve-a-problem-202105242463
+
+# 13/02/2023
+I've been reading slowly the "myth of sisyphus" by Albert Camus. This is an attempt at explaning what I've 
+understood so far. In very general terms the central idea is that of the absurde and how it is in conflict 
+with our wannabe logical view, our hopes and our general aim at finding the truth and a reality...
+He goes about the subject on multiple sides one of wich seems to be the sucide, and how it can be interpretaded,
+religion, and other philosophers views on the subject.
+To Camus absurd is our evironement the world we live in, the man that lives in it and thinks in it is partialy 
+rational and aims for a logical view, a clear objectif in life, a truth, and this is what creates the conflict 
+we, to Albert Camus, are aiming for something the world can't offer to us by definition. The title of the book 
+is a reference to the mythe of the same title, Sisyphe or Prometheus in Greek mythology founder of Corinth son 
+of Eole a hero, is punished by Zeus (Jupiter) to push a rock up a mountain, to have it fall back down by the end 
+of the climb and start over and over again, this is an image of how life is both cyclic and pointless (the absurd
+of life), all the while Sisyphe tries to justify it's action to himself, clearly representing the humans...
+Althought he doesn't give any clear position on the matter and aims more at finding the right questions, the 
+opposite would be kind of paradoxal, one of the ideas that kind of sticks to me is that of embrassing absurdity,
+wich means in part you abandon all hope and stay in a perpetual questioning without ever aiming for a clearcut 
+answer, this links back to Simone de Beauvoir and her idea to embrasse ambiguity, she also was an existantialist
+after all.
+In loosing hope, and all hope of a clear answer to the question of life, his aim is not sucide or even sadness,
+but a kind of blissful ignorance, be absurd and don't get stuck trying to find a meaning in life, it might not 
+have one... 
+
+https://plato.stanford.edu/entries/camus/
+
+# 14/02/2023
+In that same book, Camus, start on a subject, the chapter is the absurd liberty. I believe he is all of a sudden 
+making huge jumps in his train of thought, and kind of gets to a point to fast, for it to be based on reasoning,
+it seems more like a write from the heart, that parodixacly makes it a lot more engaging...
+But this is beyond the point, he starts talking about how for us to reconnect to the world, to the absurde, we 
+would need to adapt perpetualy both our consciousness and our dissaproval (revolte in french), to not fall in 
+view that try to reduce the world to a simple and generaly just human comprehenssible explaination. To Camus, it
+seems the rule of thumb is, if its understandable if it seem logical or that it is proven, it can not be the answer,
+therefore stop asking the question, and start spending your time as an inoncent mind, like a kid, but once you start
+beleiving in something ask for an other opinion.
+When I red this part earlier, for some reason my idea got stuck on the actual word revolt in french and I was stuck
+on this idea of revolution, I realize now that it was mainly used as "shifting asside an idea in your mind or 
+demantling it", still the idea stuck, being a revolutionist in a sens is disagreeing in the hopes of changing
+something, maybe the state of mind of people, and in that sens both could link.
+This is not who I am right now, but the reflection is intresting, if my objectif in life was to convert people to 
+my way of thinking what would be my underline main idea. How would I express my morals and lead to a greater 
+humanity. The small ideas are relatively easy to come by, the big picture is hard to come by, its even harder,
+and that might be a good thing, to be certain about it.
+Test a preconception ; "If a person has a certainty about a soft subject he is either stupid or dishonest."
+
+# 19/02/2023
+The fall(la chute) is a book also about Albert Camus from 1956, in this book Camus tries to frame a picture in our 
+head of man who thinks himself the perfect entity to represent humankind, he is both by his action and other people's 
+perception a genuinly good person. The reason for the title of the book is revealed as, when he encounters a few, test
+of life, testing his perfect morals, he turns out to be just a human being after all. Those test of life turn out to be 
+a "revers baptisme" to him... Meaning he fell, trying after this to avoid judgement, trouble, and therefore any false 
+sens of dignity. And now starts the guessing game for me as I've not red the book, the end probably goes around the idea
+that his mind surrenders to the "absurd", abandoning completly the search of meaning a not having any set of moral, nor
+the will to build one.
+I think that would kind of show a moral to the book, don't underestimate the faculty that life has to shatter your moral 
+policy's, If you think you are in a pretty safe cocoon then think again, you can either get very luky and coast through 
+life, being a lamb to, other's dogma or your own, or you could face one of those "test of life" and be broken and then 
+are you going to build back up... 
+I'm writing being fully convinced that this sort of fall would never happen to me, although I'm aware that this could 
+happen to anyone, paradoxical...
+The aim might be to where a mask of morals that emulate a well suited Human in a civilized world, under wich is the 
+deeper truth that nothing needs to make sens and that everything that we build our sens of moral on is our previous 
+creation or interpretation... Get the book, read the book...
+
+# 25/02/2023
+I've been in morzine for the last 3 or 4 days, my sister and two of my nieces and my stepbrother where there on vacation, 
+I have very mixed feelings about them, they live in a very different world then I do, Versailles or Saint-Germain-en-Lay, 
+should say a lot on it's own. To me it's a lot of preaching and acting in a certain way to act both thoughtful, responssible, 
+civilised and educated, a few examples to further my case, the children are forced through school in concepts and ideas that 
+are not of any intrest to them and probably very shallow as the education system does(for once I'm not blaming school all the 
+subjects can not always be of interest and teachers can not share a passion on every subject, we are human after all), my 
+point is that forcing your kids through school in the pursuit of grades for the sake of grades and social stance is one way
+to get completly lost, we are making a big mistake aiming for scores... we should aim for knowledge. 
+The rest is small stuff but show a whole, making fun in home of people with holes in their socks, eating on a plat out of
+principals, arguing by repeating the same thing with a different entonation, thinking it is okay to go teach indians in the 
+slums, words of english to have your "eye opening moment" in your life, that is super arrogant, and in the same time I dont 
+really know what would be better, I have a bit more respect for the spectating aspect of things. but I dont know why...
+And that step brother of mine is now a different person to my eyes, thinks he is so inteligent tries to prove it, by orienting 
+the subject around his feilds, never asks you a real question always with a bouncing reaction to your responce, to show his 
+goodness, has a very twisted way of thinking and talks about it as a clear advantage where it often proves to be the exact 
+opposite... He is short-tempered, when told wrong, with very shallow argumentation he will try to show you your wrong.
+Anyways I shouldn't keep finding things wrong with them at least from my point of view, I should try to see what I don't to 
+be or what I do want to be... I'm lucky to have those people to help me ask myself that question, because in our interactions 
+I was also far from perfect... Tomorow should be about what I want to be and dont want to be in comparison... 
+
+# 26/02/2023
+Writing about what I want to be and maybe about what I dont want to be, I need to be more organized stop wasting my time and 
+be more productive for myself, focus on higher pleasures no more screens except for work go out running and have projects. 
+This all seems simple, but those ideals are to harsh and hard to put in place, it's been one and a half year I've been 
+orbiting around that idea of the "perfect self", lets try it again, until I make it... Establish strict rules and stick to
+them, without the overworking aspect of it, so I don't crash, if I need a break I can choose between, going out, reading, 
+working on a project, sleeping, meditating or play guitar. Be a bit more methodical about your work, how you do it and a 
+quick analises of what was done with an idea for further improvement. This expresses whom I want to be intelectualy, both
+the easy part and one that is primordial (it allows you the time to think about the other). 
+The other therefore is moral and attitude, my social interaction, the aim in this orientation is less clear and I believe 
+it is to be built as I go, but as a base I can say this, nothing is obvious, don't force your opinions on any one, cherrich
+friends that confront your ideas and try to hear them and question them, to dig the "why ?", and make the distinction between
+with friends that are always supportive. Epresse your profound opinions as a detached idea that is just a thougth, don't back
+it with your life. Having a list of prethought questions or phrases to test, with the aim of reorienting the subject, something
+like "I'm of different opinion, can you explain yours and what backs it so I better understand your views?" and "why ?".
+Find my own values to judge people and make an effort not to depend on those created by society, or biases, one would be, to 
+not judge intelligence on what someone knows, that would be knowledge, intelligence is a sum of multiple thing the capacity to 
+listen, understand, intrest, logique to a certain extent, doubt, perseverance, ect... And then use those criterias of judgement 
+rather positif or negative, to better myself and apply them on a daily basis...
+Alrigth, welcome to your rebirth... 
