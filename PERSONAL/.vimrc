@@ -1,6 +1,3 @@
-
-source $VIMRUNTIME/defaults.vim
-
 set incsearch
 set nocompatible
 filetype on
@@ -10,10 +7,12 @@ syntax on
 set number
 set relativenumber
 set cursorline
+set nocursorcolumn
 
 set shiftwidth=5
 set tabstop=5
 set nobackup
+set nowritebackup
 set ignorecase
 set smartcase
 set showcmd
@@ -26,6 +25,11 @@ set nowrap
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" Special to Coc.nvim.
+set encoding=utf-8
+set updatetime=500
+set signcolumn=no
 
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
@@ -53,6 +57,7 @@ call plug#begin('~/.vim/plugged')
 		  \ Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'xbeheydt/42-vim-stdheader'
 	Plug 'ggVGc/vim-fuzzysearch'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 " Plugin code goes here.
@@ -75,7 +80,25 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <F1> :NERDTreeToggle<cr>
 nnoremap <F2> :NERDTreeFind<cr>
-let NERDTreeIgnore =['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
+let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
+
+" Special to Coc.nvim.
+
+inoremap <silent><expr> <S-TAB>
+     \ coc#pum#visible() ? coc#pum#next(1) :
+      \ coc#refresh()
+
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use <c-space> to trigger completion
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 
 " Mappings code goes here. 
 "
