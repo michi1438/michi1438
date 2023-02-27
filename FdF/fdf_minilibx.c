@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:29:51 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/25 21:15:08 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/27 11:32:55 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,12 +69,12 @@ void	draw(int i, t_data *img)
 				(img->tab)[1][e] = 0x00FF0000;
 			axis[0] = ((WIDTH / 2) + img->x_axis) + (j - i) * (ogscale + img->scaling);
 			axis[1] = (img->y_axis + (i + j - (img->tab)[0][e]) * (ogscale + img->scaling) / sqrt(2)); 
-			axis[4] = ((WIDTH / 2) + img->x_axis) + (j - (i - 1)) * (ogscale + img->scaling);
-			axis[5] = (img->y_axis + (((i - 1) + j) - (img->tab)[0][e]) * (ogscale + img->scaling) / sqrt(2)); 
+			axis[4] = ((WIDTH / 2) + img->x_axis) + (j - (i + 1)) * (ogscale + img->scaling);
+			axis[5] = (img->y_axis + (((i + 1) + j) - (img->tab)[0][e - img->wcount]) * (ogscale + img->scaling) / sqrt(2)); 
+			vertical_line(img, axis, e);
 			j++;
 			axis[2] = ((WIDTH / 2) + img->x_axis) + (j - i) * (ogscale + img->scaling);
 			axis[3] = (img->y_axis + (i + j - (img->tab)[0][e + 1]) * (ogscale + img->scaling) / sqrt(2)); 
-			//vertical_line(img, axis, e);
 			horizontal_line(img, axis, e);
 			e++;
 		}
@@ -87,13 +87,15 @@ void	vertical_line(t_data *img, int *axis, int e)
 	int	inc;
 
 	inc = 0;
-	while (axis[5] < axis[1])
+	axis[2] = 0;
+	while (axis[2] < axis[0] - 1)
 	{
-		axis[5] = axis[5] + inc;
+		axis[2] = axis[4] + inc;
+		axis[3] = axis[5] + inc * (axis[1] - axis[5]) / (axis [0] - axis[4]);
 		//complet_lines();
-		if ((axis[4] > 0 && axis[4] < WIDTH) && (axis[5] > 0 && axis[5] < HEIGHT))
+		if ((axis[2] > 0 && axis[2] < WIDTH) && (axis[3] > 0 && axis[3] < HEIGHT))
 		{
-			my_mlx_pixel_put(img, axis[4], axis[5], (img->tab)[1][e]);
+			my_mlx_pixel_put(img, axis[2], axis[3], (img->tab)[1][e]);
 		}
 		inc++;
 	}
@@ -118,7 +120,6 @@ void	horizontal_line(t_data *img, int *axis, int e)
 		inc++;
 	}
 }
-
 
 void	complet_lines(int *axis, t_data *img, int e)
 {

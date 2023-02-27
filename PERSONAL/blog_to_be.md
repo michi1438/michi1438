@@ -845,3 +845,18 @@ not judge intelligence on what someone knows, that would be knowledge, intellige
 listen, understand, intrest, logique to a certain extent, doubt, perseverance, ect... And then use those criterias of judgement 
 rather positif or negative, to better myself and apply them on a daily basis...
 Alrigth, welcome to your rebirth... 
+
+# 27/02/2023
+What are and what is the difference between dark matter and dark energy, well dark matter is a placeholder name for about 85% 
+of the matter in the universe that we dont see and don't see the interactions of (at least not directly, because it does have 
+mass and therefore a gravitational force, this is how it was discovered), it does not interact to the electromagnetic field, 
+it does not react to light is an other way of saying this, this is why it is called "dark".
+This idea of dark matter emerges from the calculations of many galaxies that according to the amount of matter we see should not 
+behave gravitationaly the way they do. It does not interact with baryonic matter (all the matter we know), it is therefore thougth
+to be non-baryonic matter (in the likes of neutrinos, free electrons and what composes black holes), it is supposed to be composed 
+of subatomic particles not yet discovered but the group is called in the mean time the WIMP's for Weakly Interacting Massive Particles.
+Dark matter is classified as cold, warm or hot, in relation to the velocity, current models favor a cold dark matter scenario in wich 
+galaxies form by gradual accumulation. 
+Although this is the most commonly accepted theory, other astrophysicists argue for different models or revision of general relativity.
+These would be, the modified Newtonian dynamics, tensor-vector-scalar gravity, entropic gravity, those try to explain all observation 
+without invoking non-baryonic matter.  
