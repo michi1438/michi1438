@@ -57,7 +57,6 @@ call plug#begin('~/.vim/plugged')
 		  \ Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'xbeheydt/42-vim-stdheader'
 	Plug 'ggVGc/vim-fuzzysearch'
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 " Plugin code goes here.
@@ -81,24 +80,6 @@ nnoremap <c-l> <c-w>l
 nnoremap <F1> :NERDTreeToggle<cr>
 nnoremap <F2> :NERDTreeFind<cr>
 let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
-
-" Special to Coc.nvim.
-
-inoremap <silent><expr> <S-TAB>
-     \ coc#pum#visible() ? coc#pum#next(1) :
-      \ coc#refresh()
-
-" Make <CR> to accept selected completion item or notify coc.nvim to format
-" <C-g>u breaks current undo, please make your own choice
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Use <c-space> to trigger completion
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
 
 " Mappings code goes here. 
 "
@@ -126,11 +107,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "	Automatically close a tab if the only remaining window is NerdTree.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 	
-augroup cursor_off
-	autocmd!
-	autocmd WinLeave * set nocursorline nocursorcolumn
-	autocmd WinEnter * set  cursorline cursorcolumn
-augroup END
 " More Vimscripts code goes here.
 
 " }}}
