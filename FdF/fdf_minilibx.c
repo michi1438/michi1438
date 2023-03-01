@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:29:51 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/28 22:52:25 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/01 10:40:09 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ void	start_graph(int wcount, int valcnt, int **tab)
 	fill_sct_hook(&wcount, &valcnt, tab, &img);
 	draw(valcnt/wcount, &img); 
 	mlx_put_image_to_window(img.mlx, img.win, img.img, 0, 0);
-	mlx_hook(img.win, 2, 1L<<0, interact_mlx, &img);
+	mlx_hook(img.win, 2, 1L<<0, keyboard_mlx, &img);
+	mlx_hook(img.win, 4, 1L<<2, button_mlx, &img);
 	mlx_loop(img.mlx);
 }
 

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 20:00:43 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/28 23:51:23 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/01 10:42:05 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,16 @@ void	redo_img(t_data *img, int x, int y, int zoom)
 	mlx_put_image_to_window(img->mlx, img->win, img->img, 0, 0);
 }
 
-int	interact_mlx(int keycode, t_data *img)
+int button_mlx(int button, int x, int y, t_data *img)
+{
+	(void)x;
+	(void)img;
+	(void)y;
+	printf("%d\n", button);
+	return(0);
+}
+
+int	keyboard_mlx(int keycode, t_data *img)
 {
 	static int	axis[2];
 	static int	zoom;
