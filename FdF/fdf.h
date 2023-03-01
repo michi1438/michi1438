@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/01 10:41:01 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/01 11:48:05 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ void	ft_err(char *err);
 int		to_window_scale(int wcount, int valcnt);
 void	draw(int i, t_data *img);
 void	filltab(int *x, int *valcnt, char *nline, int **tab);
+int		destroy_cleaner_mlx(t_data *img);
 int		keyboard_mlx(int keycode, t_data *img);
 void	fill_sct_hook(int *wcount, int *valcnt, int **tab, t_data *img);
 void	cardinal_displacement(int keycode, t_data *img, int *axis, int zoom);
@@ -72,6 +73,5 @@ void	vertical_line(t_data *img, int *axis, int e);
 void	place_nodes(t_data *img, int *e, int *j, int *i);
 void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom);
 void	clean(char **splited);
-int button_mlx(int button, int x, int y, t_data *img);
 
 #endif
