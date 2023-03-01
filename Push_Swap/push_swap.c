@@ -1,31 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_parsing.c                                      :+:      :+:    :+:   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 20:37:57 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/28 17:53:41 by mguerga          ###   ########.fr       */
+/*   Created: 2023/03/01 00:16:38 by mguerga           #+#    #+#             */
+/*   Updated: 2023/03/01 00:16:40 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fdf.h"
 
-int	fdf_parser(int ac, char **av)
-{
-	char	*isfdf;
-
-	if (ac != 2)
-		ft_err(ER_NOT1ARG);
-	isfdf = ft_strnstr(av[1], ".fdf", 1000);
-	if (isfdf == NULL)
-		ft_err(ER_NOTFDF);
-	return (1);
-}
-
-void ft_err(char *err)
-{
-	perror(err);
-	exit(1);
-}

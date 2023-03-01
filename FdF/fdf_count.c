@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:34:07 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/21 21:08:53 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/02/28 22:49:07 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,6 @@ int	line_count(int fd)
 		else
 			red = read(fd, buf, 1);
 	}
-	ft_printf("line_count; %d\n", i);
-	return (i);
-}
-
-int	koma_count(int fd)
-{
-	int		i;
-	char	buf[1];
-
-	i = 0;
-	while (read(fd, buf, 1) != 0)
-		if (buf[0] == ',')
-			i++;
-	ft_printf("koma_count; %d\n", i);
 	return (i);
 }
 
@@ -56,9 +42,24 @@ int	word_count(char **splited)
 
 	i = 0;
 	while (splited[i] != NULL && splited[i][0] != '\n')
+	{
 		i++;
-	ft_printf("word_count; %d\n", i);
+	}
+	clean(splited);
 	return (i);
+}
+
+void	clean(char **splited)
+{
+	int	i;
+
+	i = 0;
+	while (splited[i] != NULL)
+	{
+		free(splited[i]);
+		i++;
+	}
+	free(splited);
 }
 
 int	lonely_ret_count(int fd)
@@ -76,6 +77,5 @@ int	lonely_ret_count(int fd)
 				i++;
 		}
 	}
-	ft_printf("lonely_ret_count; %d\n", i);
 	return (i);
 }
