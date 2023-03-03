@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 20:40:16 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/03 20:08:40 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@
 # include <errno.h>
 # define HEIGHT 1080 
 # define WIDTH 1920
-# define ER_NONUM "the file contains an unhandled value (\"0123456789 ,xX\\n\") \n"
+# define ER_NONUM "the file contains an unhandled value (\"0123456789 ,xX\\n\").\n"
 # define ER_RECT "the lines are not all of the same length...\n"
-# define ER_NOTFDF "make sure your arg is a .fdf file\n"
-# define ER_NOT1ARG "expected 1 arg\n"
+# define ER_NOTFDF "make sure your arg is a .fdf file.\n"
+# define ER_NOT1ARG "expected 1 arg.\n"
+# define ER_NOSPACE "Malloc failed not enough space.\n"
 # define ER "Error"
 
 typedef struct s_data {
@@ -32,8 +33,8 @@ typedef struct s_data {
 	void	*win;
 	char	*addr;
 	int		bpp;
-	int		line_length;
-	int		endian;
+	int		llen;
+	int		endi;
 
 // to call through hooks.
 	int		valcnt;
@@ -43,7 +44,6 @@ typedef struct s_data {
 	int		x_axis;
 	int		y_axis;
 	float	accentuate;
-	float	x_rot;
 }			t_data;
 
 void	redo_img(t_data *img, int x, int y, int zoom);
@@ -75,5 +75,6 @@ void	place_nodes(t_data *img, int *e, int *j, int *i);
 void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom);
 void	clean(char **splited);
 void	ft_perr(char *err);
+void	create_tab(int **tab, int lines, int wcount);
 
 #endif

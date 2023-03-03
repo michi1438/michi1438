@@ -6,20 +6,11 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 20:33:13 by mguerga           #+#    #+#             */
-/*   Updated: 2023/02/28 17:54:36 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/03 19:30:48 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
-
-char	*replace_nline(int fd, char *nline)
-{
-	char	*nptr;
-
-	nptr = get_next_line(fd);
-	free (nline);
-	return (nptr);
-}
 
 int	contain_nonnum(char *word)
 {
@@ -75,7 +66,7 @@ int	calchex(int i, const char *nptr)
 		if (ft_isdigit(nptr[i]))
 			res += (nptr[i] - 48) * mult;
 		else
-			res += (nptr[i] - 55) * mult; 
+			res += (nptr[i] - 55) * mult;
 		mult *= 16;
 		i--;
 	}
@@ -107,8 +98,8 @@ int	trimatohex(const char *nptr, int *neg)
 
 int	ft_ishex(int c)
 {
-	char *hexval;	
-	int	i;
+	char	*hexval;
+	int		i;
 
 	i = 0;
 	hexval = "0123456789ABCDEF";

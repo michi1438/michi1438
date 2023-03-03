@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/31 16:25:28 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 20:31:04 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/03 20:06:21 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,7 @@ int	ft_putlineto_tab(int fd, int lines, int lonely_ret)
 	valcnt = 0;
 	nline = get_next_line(fd);
 	wcount = word_count(ft_split(nline, ' '));
-	tab[0] = malloc(lines * sizeof(int) * wcount);
-	tab[1] = malloc(lines * sizeof(int) * wcount);
+	create_tab(tab, lines, wcount);
 	while (nline != NULL)
 	{
 		x = 0;
@@ -59,6 +58,28 @@ int	ft_putlineto_tab(int fd, int lines, int lonely_ret)
 	return (fd);
 }
 
+void	create_tab(int **tab, int lines, int wcount)
+{
+	tab[0] = malloc(lines * sizeof(int) * wcount);
+	if (tab[0] == NULL)
+		ft_sterror(ER_NOSPACE);
+	tab[1] = malloc(lines * sizeof(int) * wcount);
+	if (tab[1] == NULL)
+	{
+		free(tab[0]);
+		ft_sterror(ER_NOSPACE);
+	}
+}
+
+char	*replace_nline(int fd, char *nline)
+{
+	char	*nptr;
+
+	nptr = get_next_line(fd);
+	free (nline);
+	return (nptr);
+}
+
 void	filltab(int *x, int *valcnt, char *nline, int **tab)
 {
 	char	**splited;
@@ -68,10 +89,7 @@ void	filltab(int *x, int *valcnt, char *nline, int **tab)
 	while (splited[*x] != NULL)
 	{
 		if (contain_nonnum(splited[*x]) == 2)
-		{
-			clean(splited);
 			ft_sterror(ER_NONUM);
-		}
 		if (contain_nonnum(splited[*x]) == 1)
 		{
 			splited_2 = ft_split(splited[*x], ',');

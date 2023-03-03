@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 11:49:22 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 20:52:33 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/03 20:09:33 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	keyboard_mlx(int keycode, t_data *img)
 	static int	axis[2];
 	static int	zoom;
 
-	ft_printf("%d\n", keycode);
 	if (keycode == 65307 || keycode == 53)
 	{
 		mlx_destroy_window(img->mlx, img->win);
