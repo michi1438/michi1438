@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_parsing.c                                      :+:      :+:    :+:   */
+/*   err_handling.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 20:37:57 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 19:59:14 by mguerga          ###   ########.fr       */
+/*   Created: 2023/03/02 19:52:14 by mguerga           #+#    #+#             */
+/*   Updated: 2023/03/02 20:30:13 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-int	fdf_parser(int ac, char **av)
+void	ft_perr(char *err)
 {
-	char	*isfdf;
+	perror(err);
+	exit (1);
+}
 
-	if (ac != 2)
-		ft_sterror(ER_NOT1ARG);
-	isfdf = ft_strnstr(av[1], ".fdf", 1000);
-	if (isfdf == NULL)
-		ft_sterror(ER_NOTFDF);
-	return (1);
+void	ft_sterror(char *err)
+{
+	(void)err;
+	ft_printf("Error: %s\n", err);
+	exit	(1);
 }

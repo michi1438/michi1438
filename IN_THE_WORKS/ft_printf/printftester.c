@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_parsing.c                                      :+:      :+:    :+:   */
+/*   printftester.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/04 20:37:57 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 19:59:14 by mguerga          ###   ########.fr       */
+/*   Created: 2023/03/02 18:04:28 by mguerga           #+#    #+#             */
+/*   Updated: 2023/03/02 19:28:12 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fdf.h"
+#include "ft_printf.h"
 
-int	fdf_parser(int ac, char **av)
+int	main(void)
 {
-	char	*isfdf;
-
-	if (ac != 2)
-		ft_sterror(ER_NOT1ARG);
-	isfdf = ft_strnstr(av[1], ".fdf", 1000);
-	if (isfdf == NULL)
-		ft_sterror(ER_NOTFDF);
-	return (1);
+	ft_printf("%d\n", 42);
 }

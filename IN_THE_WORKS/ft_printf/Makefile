@@ -6,7 +6,7 @@
 #    By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/02 15:48:03 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/26 10:19:33 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/02 18:28:52 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,12 +22,12 @@ OBJ = $(SRC:.c=.o)
 
 CC = gcc
 
-CFLAGS = 
+CFLAGS =
 
 all: $(NAME)
 
 test: re
-	$(CC) $(CFLAGS) -g -fsanitize=address *.o libft/*.o $(TSRC) -o TEST
+	$(CC) $(TSRC) -g3 -fsanitize=leak *.o */*.o -o TEST
 
 libf:
 	make -C ./libft

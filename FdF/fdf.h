@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/01 11:48:05 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/02 20:40:16 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@
 # include <errno.h>
 # define HEIGHT 1080 
 # define WIDTH 1920
-# define ER_NONUM "error, the word contains a nonnum value \n"
-# define ER_RECT "error, the lines are not all of the same length...\n"
-# define ER_NOTFDF "error, make sure your arg is a .fdf file\n"
-# define ER_NOT1ARG "error, expected 1 arg\n"
+# define ER_NONUM "the file contains an unhandled value (\"0123456789 ,xX\\n\") \n"
+# define ER_RECT "the lines are not all of the same length...\n"
+# define ER_NOTFDF "make sure your arg is a .fdf file\n"
+# define ER_NOT1ARG "expected 1 arg\n"
+# define ER "Error"
 
 typedef struct s_data {
 	void	*mlx;
@@ -58,7 +59,7 @@ int		contain_nonnum(char *word);
 void	enum_tab(int *tab, int val_count, int wcount);
 unsigned int		ft_atohex(char *nptr);
 void	start_graph(int wcount, int valcnt, int **tab);
-void	ft_err(char *err);
+void	ft_sterror(char *err);
 int		to_window_scale(int wcount, int valcnt);
 void	draw(int i, t_data *img);
 void	filltab(int *x, int *valcnt, char *nline, int **tab);
@@ -73,5 +74,6 @@ void	vertical_line(t_data *img, int *axis, int e);
 void	place_nodes(t_data *img, int *e, int *j, int *i);
 void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom);
 void	clean(char **splited);
+void	ft_perr(char *err);
 
 #endif

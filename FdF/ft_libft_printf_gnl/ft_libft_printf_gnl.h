@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 11:50:38 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/26 11:50:43 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/02 19:37:07 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,6 @@ void	dealwithplneg(t_toggler *flg, t_conv *cvut, int toconv);
 void	dealwithpospoints(t_toggler *flg, t_conv *cvut, int toconv);
 int		ft_normprintf(const char *str, int i, int *ret);
 int		placeva(int *ret, t_conv *cvut, int i, va_list perc);
+void	cleaner(t_conv *cvut);
 
 #endif
