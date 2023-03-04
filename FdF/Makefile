@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/03 19:58:51 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/04 08:05:57 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,9 @@ all: $(NAME)
 libf_printf_gnl:
 	make -C ./ft_libft_printf_gnl
 
+libfdf.a: libf_printf_gnl $(OBJ)
+	ar rc libfdf.a $(OBJ)	
+
 ifeq ($(OS), Darwin)
 $(NAME): libf_printf_gnl $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) fdf.c -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o $(NAME)
@@ -42,7 +45,7 @@ clean:
 	make clean -C ./ft_libft_printf_gnl
 
 fclean: clean
-	rm -rf $(NAME) fdf
+	rm -rf $(NAME) libfdf.a fdf
 	make fclean -C ./ft_libft_printf_gnl
 
 re: fclean

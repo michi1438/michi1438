@@ -1,9 +1,23 @@
 #!/bin/bash
+#run_mult_test.sh
+# Maybe test with -g3 -fsanitize=leak/address
+#
 
+OS=`uname`
 MPS_PATH=./test_maps/
 MPS_COUNT=`ls -l ./test_maps/ | wc -l`
+CFLAGS='-Werror -Wall -Wextra #-g -fsanitize=leak'
+CC=gcc
 
-make
+make fclean
+make libfdf.a
+
+ifeq ($(OS), Darwin)
+	$(CC) $(CFLAGS) fdf.c -L./ -lfdf -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o fdf
+endif
+ifeq ($(OS), Linux)
+	$(CC) $(CFLAGS) fdf.c -L./ -lfdf -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -lX11 -lXext -lm -o fdf 
+endif
 
 echo "Testing 0 args :\n"
 ./fdf
@@ -22,5 +36,8 @@ do
 	echo "This is : $MPS_FILE"
 	let MPS_COUNT-=1
 done
+
+make fclean
+echo "Test is done !"
 
 exit 0
