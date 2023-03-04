@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/03 20:08:40 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/04 06:07:25 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 # include <errno.h>
 # define HEIGHT 1080 
 # define WIDTH 1920
-# define ER_NONUM "the file contains an unhandled value (\"0123456789 ,xX\\n\").\n"
-# define ER_RECT "the lines are not all of the same length...\n"
-# define ER_NOTFDF "make sure your arg is a .fdf file.\n"
-# define ER_NOT1ARG "expected 1 arg.\n"
+# define ER_NONUM "The file contains an unhandled value (\"0123456789 ,xX\\n\").\n"
+# define ER_RECT "The lines are not all of the same length...\n"
+# define ER_NOTFDF "Make sure your arg is a .fdf file.\n"
+# define ER_NOT1ARG "Expected 1 arg.\n"
 # define ER_NOSPACE "Malloc failed not enough space.\n"
 # define ER "Error"
 

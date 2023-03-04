@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 19:52:14 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/03 19:26:51 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/04 06:07:55 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_perr(char *err)
 {
 	perror(err);
+	ft_printf("\n");
 	exit (1);
 }
 
