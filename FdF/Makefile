@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 17:38:55 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/04 08:05:57 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/06 15:22:23 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ clean:
 	make clean -C ./ft_libft_printf_gnl
 
 fclean: clean
-	rm -rf $(NAME) libfdf.a fdf
+	rm -rf $(NAME) libfdf.a fdftest
 	make fclean -C ./ft_libft_printf_gnl
 
 re: fclean

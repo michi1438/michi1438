@@ -4,29 +4,29 @@
 #
 
 OS=`uname`
-MPS_PATH=./test_maps/
+MPS_PATH=test_maps/
 MPS_COUNT=`ls -l ./test_maps/ | wc -l`
-CFLAGS='-Werror -Wall -Wextra #-g -fsanitize=leak'
+CFLAGS='-Werror -Wall -Wextra'
 CC=gcc
-FDF=~/michi1438/FdF/fdf
+FDF='leaks -atExit -- ./fdftest'
 
 make fclean
-make 
+make libfdf.a 
 
-if [${OS} -e "Darwin"]
+if [ ${OS} == "Darwin" ]
 then
-	$(CC) $(CFLAGS) fdf.c -L./ -lfdf -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o fdf
+	${CC} ${CFLAGS} fdf.c -L./ -lfdf -Lft_libft_printf_gnl/ -lftprintf -Lminilibx_macos/ -lmlx -framework OpenGL -framework Appkit -o fdftest
 fi
 
-if [${OS} -e "Linux"]
+if [ ${OS} == "Linux" ]
 then
-	$(CC) $(CFLAGS) fdf.c -L./ -lfdf -Lft_libft_rintf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -lX11 -lXext -lm -o fdf 
+	${CC} ${CFLAGS} fdf.c -L./ -lfdf -Lft_libft_printf_gnl/ -lftprintf -Lminilibx-linux/ -lmlx -lX11 -lXext -lm -o fdftest
 fi
 
 echo "Testing 0 args :\n"
-~/michi1438/FdF/fdf
+./fdftest
 echo "Testing 2 args :\n"
-~/michi1438/FdF/fdf fdhoh theuont
+$FDF fdhoh theuont
 echo "Testing non .fdf suffixed file :\n"
 $FDF run_mult_test.sh
 echo "Testing DNE .fdf file :\n"
@@ -37,6 +37,7 @@ while [ "$MPS_COUNT" -gt 0 ]
 do
 	MPS_FILE=`ls ./test_maps/ | awk '{print $1}' | tail -${MPS_COUNT} | head -1`
 	$FDF ${MPS_PATH}${MPS_FILE}
+	sleep 5
 	echo "This is : $MPS_FILE"
 	let MPS_COUNT-=1
 done
