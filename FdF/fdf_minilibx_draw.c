@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:30:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/03 19:49:28 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 11:48:56 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	place_nodes(t_data *img, int *e, int *j, int *i)
 	int		scale;
 
 	scale = img->scaling;
+	if (scale < 1)
+		scale = 1;
 	if ((img->tab)[1][*e] == 0)
 		(img->tab)[1][*e] = 0x00FF0000;
 	ax[0] = ((WIDTH / 2) + img->x_axis) + (*j - *i) * scale;
