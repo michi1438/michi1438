@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 11:49:22 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/06 11:48:37 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 13:38:09 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ int	keyboard_mlx(int keycode, t_data *img)
 	}
 	if (keycode == 45 || keycode == 78)
 	{
-		zoom -= 1;
+		if (img->scaling > 1)
+			zoom -= 1;
 		redo_img(img, axis[0], axis[1], zoom);
 	}
 	if (keycode == 43 || keycode == 69)

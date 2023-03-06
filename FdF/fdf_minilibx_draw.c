@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 17:30:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/06 11:48:56 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 13:27:45 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	place_nodes(t_data *img, int *e, int *j, int *i)
 	int		scale;
 
 	scale = img->scaling;
-	if (scale < 1)
-		scale = 1;
 	if ((img->tab)[1][*e] == 0)
 		(img->tab)[1][*e] = 0x00FF0000;
 	ax[0] = ((WIDTH / 2) + img->x_axis) + (*j - *i) * scale;
@@ -50,7 +48,7 @@ void	vertical_line(t_data *img, int *ax, int e)
 	while (ax[2] < ax[0] - 1)
 	{
 		ax[2] = ax[4] + inc;
-		ax[3] = ax[5] + inc * (ax[1] - ax[5]) / (ax [0] - ax[4]);
+		ax[3] = ax[5] + inc * (ax[1] - ax[5]) / (ax[0] - ax[4]);
 		ax[6] = ax[5] + inc + 1 * (ax[1] - ax[5]) / (ax[0] - ax[4]);
 		complet_vlines(ax, img, e);
 		if ((ax[2] > 0 && ax[2] < WIDTH) && (ax[3] > 0 && ax[3] < HEIGHT))
@@ -70,7 +68,7 @@ void	horizontal_line(t_data *img, int *ax, int e)
 	while (ax[4] < ax[2] - 1)
 	{
 		ax[4] = ax[0] + inc;
-		ax[5] = ax[1] + inc * (ax[3] - ax[1]) / (ax [2] - ax[0]);
+		ax[5] = ax[1] + inc * (ax[3] - ax[1]) / (ax[2] - ax[0]);
 		ax[6] = ax[1] + inc + 1 * (ax[3] - ax[1]) / (ax[2] - ax[0]);
 		complet_hlines(ax, img, e);
 		if ((ax[4] > 0 && ax[4] < WIDTH) && (ax[5] > 0 && ax[5] < HEIGHT))

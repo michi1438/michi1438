@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 22:28:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/04 06:07:25 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 13:31:16 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,6 @@ void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom);
 void	clean(char **splited);
 void	ft_perr(char *err);
 void	create_tab(int **tab, int lines, int wcount);
+int	calc_offelev(t_data *img);
 
 #endif
