@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 11:50:38 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 19:37:07 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 16:21:59 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdio.h>
-# include "get_next_line/get_next_line.h"
+# include "get_next_line/get_next_line_bonus.h"
 
 typedef struct sct {
 	char	type;

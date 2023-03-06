@@ -6,13 +6,13 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:05:04 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 12:00:49 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 16:38:50 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-char	*ft_strjoin_gnl(char *s1, char *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*ptr;
 	int		i;
@@ -20,7 +20,7 @@ char	*ft_strjoin_gnl(char *s1, char *s2)
 
 	i = 0;
 	j = 0;
-	ptr = ft_calloc(sizeof(char), (ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1));
+	ptr = ft_calloc(sizeof(char), (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (ptr == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
@@ -38,7 +38,7 @@ char	*ft_strjoin_gnl(char *s1, char *s2)
 	return (ptr);
 }
 
-size_t	ft_strlen_gnl(char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
@@ -56,7 +56,7 @@ char	*freeandreplace(char *oldstr, char *stradd, int ind)
 
 	if (ind >= 0)
 	{
-		nptr = ft_strjoin_gnl("", &stradd[ind + 1]);
+		nptr = ft_strjoin("", &stradd[ind + 1]);
 		if (oldstr != NULL)
 		{
 			free(oldstr);
@@ -66,7 +66,7 @@ char	*freeandreplace(char *oldstr, char *stradd, int ind)
 	}
 	else
 	{
-		nptr = ft_strjoin_gnl(oldstr, stradd);
+		nptr = ft_strjoin(oldstr, stradd);
 		free (oldstr);
 		return (nptr);
 	}

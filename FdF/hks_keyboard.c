@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 11:49:22 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/06 13:38:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/06 17:31:21 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@ int	keyboard_mlx(int keycode, t_data *img)
 		zoom += 1;
 		redo_img(img, axis[0], axis[1], zoom);
 	}
-	cardinal_displacement(keycode, img, axis, zoom);
-	accentuate_terrain(keycode, img, axis, zoom);
+	moving(keycode, img, axis, zoom);
+	accent(keycode, img, axis, zoom);
 	return (0);
 }
 
-void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom)
+void	accent(int keycode, t_data *img, int *axis, int zoom)
 {
 	if (keycode == 75 || keycode == 47)
 	{
@@ -52,7 +52,7 @@ void	accentuate_terrain(int keycode, t_data *img, int *axis, int zoom)
 	}
 }
 
-void	cardinal_displacement(int keycode, t_data *img, int *axis, int zoom)
+void	moving(int keycode, t_data *img, int *axis, int zoom)
 {
 	if (keycode == 65362 || keycode == 125)
 	{
