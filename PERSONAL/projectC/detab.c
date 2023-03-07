@@ -5,7 +5,7 @@
 /* detab.c replaces tabs in input for the proper number of ws, assume a fixed set of tab stop 8.
  */
 
-main()
+void	main()
 {
 	int c, i, nc, rep; 
 	nc = 0;

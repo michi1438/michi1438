@@ -1,41 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/11 09:37:24 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/11 19:31:03 by xbeheydt         ###   ########.fr       */
+/*   Created: 2023/01/11 19:02:51 by xbeheydt          #+#    #+#             */
+/*   Updated: 2023/03/06 16:24:23 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*get_next_line(int fd)
 {
 	t_strs			strings;
 	int				i;
 	int				red;
-	static char		*statline;
+	static char		*statline[1024];
 
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
 	strings.buf = ft_calloc(1, sizeof(char) * (BUFFER_SIZE) + 1);
 	strings.line = ft_calloc(1, sizeof(char) * (BUFFER_SIZE) + 1);
 	i = 0;
 	red = 0;
-	if (statline != NULL)
+	if (statline[fd] != NULL)
 	{
-		if (readforterm(statline, 1) >= 0)
-			return (ifstatret(&strings, &statline, i));
+		if (readforterm(statline[fd], 1) >= 0)
+			return (ifstatret(&strings, &statline[fd], i));
 		red = read(fd, strings.buf, BUFFER_SIZE);
-		i = readforterm(statline, 0);
-		strings.line = stat_after_read(&statline, &strings, red, i);
+		i = readforterm(statline[fd], 0);
+		strings.line = stat_after_read(&statline[fd], &strings, red, i);
 		if (strings.line != NULL && red == 0)
 			return (strings.line);
 	}
 	else
 		red = read(fd, strings.buf, BUFFER_SIZE);
-	return (mainwhile(fd, &strings, &statline, &red));
+	return (mainwhile(fd, &strings, &statline[fd], &red));
 }
 
 char	*stat_after_read(char **statline, t_strs *strings, int red, int i)

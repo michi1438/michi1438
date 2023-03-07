@@ -9,8 +9,8 @@ set relativenumber
 set cursorline
 set nocursorcolumn
 
-set shiftwidth=5
-set tabstop=5
+set shiftwidth=4
+set tabstop=4
 set nobackup
 set nowritebackup
 set ignorecase
@@ -26,10 +26,22 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-" Special to Coc.nvim.
-set encoding=utf-8
-set updatetime=500
-set signcolumn=no
+" Enable norminette-vim (and gcc)
+let g:syntastic_c_checkers = ['norminette', 'gcc']
+let g:syntastic_aggregate_errors = 1
+
+" Set the path to norminette (do no set if using norminette of 42 mac)
+let g:syntastic_c_norminette_exec = 'norminette'
+
+" Support headers (.h)
+let g:c_syntax_for_h = 1
+let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
+
+" Pass custom arguments to norminette (this one ignores 42header)
+let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
+
+" Check errors when opening a file (disable to speed up startup time)
+let g:syntastic_check_on_open = 1
 
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
@@ -57,6 +69,8 @@ call plug#begin('~/.vim/plugged')
 		  \ Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'xbeheydt/42-vim-stdheader'
 	Plug 'ggVGc/vim-fuzzysearch'
+	Plug 'vim-syntastic/syntastic'
+	Plug 'alexandregv/norminette-vim'
 
 call plug#end()
 " Plugin code goes here.
@@ -75,10 +89,14 @@ nnoremap O O<esc>
 nnoremap <c-z> <nop>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+nnoremap J 5j
+nnoremap K 5k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <F1> :NERDTreeToggle<cr>
 nnoremap <F2> :NERDTreeFind<cr>
+inoremap <F1> <esc>:NERDTreeToggle<cr>
+inoremap <F2> <esc>:NERDTreeFind<cr>
 let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
 
 " Mappings code goes here. 

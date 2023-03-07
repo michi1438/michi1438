@@ -5,35 +5,33 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/03/01 00:16:04 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/07 18:27:09 by mguerga          ###   ########.fr        #
+#    Created: 2022/12/23 12:41:15 by mguerga           #+#    #+#              #
+#    Updated: 2023/03/06 16:29:49 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = push_swap
+NAME = get_next_line
 
 CC = gcc
 
-CFLAGS = -Werror -Wextra -Wall #-g -fsanitise=address
+CFLAGS = -Werror -Wall -Wextra #-g -fsanitize=address
 
-SRC = main.c err_handling.c parsing.c cleaner.c
+SRCB = get_next_line_utils_bonus.c get_next_line_bonus.c
 
-OBJ = $(SRC:.c=.o)
+OBJB = $(SRCB:.c=.o)
 
-all: $(NAME) #bonus
-
-libf_printf_gnl:
-	make -C ./ft_libft_printf_gnl
-
-$(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -Lft_libft_printf_gnl/ -lftprintf -o $(NAME)
+all: $(NAME) 
+	
+$(NAME): $(OBJB)
+	ar rc $(NAME) $(OBJB)
 
 clean:
-	rm -rf $(OBJ)
+	rm -f *.o
 
 fclean: clean
-	rm -rf $(NAME) 
-	make fclean -C ./ft_libft_printf_gnl
+	rm -f ${NAME} 
+	rm -f TEST
+
 
 re: fclean
 	make all
