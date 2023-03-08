@@ -8,8 +8,11 @@ set number
 set relativenumber
 set cursorline
 set nocursorcolumn
+" set syntax=on " prints error filetype uknown.
+" set colorcolumn=80
 
 set shiftwidth=4
+set softtabstop=4
 set tabstop=4
 set nobackup
 set nowritebackup
@@ -71,6 +74,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ggVGc/vim-fuzzysearch'
 	Plug 'vim-syntastic/syntastic'
 	Plug 'alexandregv/norminette-vim'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 
 call plug#end()
 " Plugin code goes here.
@@ -97,6 +102,8 @@ nnoremap <F1> :NERDTreeToggle<cr>
 nnoremap <F2> :NERDTreeFind<cr>
 inoremap <F1> <esc>:NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeFind<cr>
+nnoremap <F3> :Files<cr>
+inoremap <F3> <esc>:Files<cr>
 let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
 
 " Mappings code goes here. 
