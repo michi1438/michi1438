@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/01 00:16:04 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/08 14:32:33 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/10 12:27:49 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME = push_swap
 
 CC = gcc
 
-CFLAGS = -Werror -Wextra -Wall #-g -fsanitise=address
+CFLAGS = -Werror -Wextra -Wall #-g3 -fsanitize=leak
 
-SRC = main.c err_handling.c parsing.c cleaner.c checking.c
+SRC = main.c err_handling.c parsing.c cleaner.c checking.c list_manipulation.c
 
 OBJ = $(SRC:.c=.o)
 
