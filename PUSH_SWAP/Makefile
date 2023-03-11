@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/01 00:16:04 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/10 12:27:49 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/11 12:53:50 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = gcc
 
 CFLAGS = -Werror -Wextra -Wall #-g3 -fsanitize=leak
 
-SRC = main.c err_handling.c parsing.c cleaner.c checking.c list_manipulation.c
+SRC = main.c err_handling.c parsing.c cleaner.c checking.c list_manipulation.c list_enum.c 
 
 OBJ = $(SRC:.c=.o)
 

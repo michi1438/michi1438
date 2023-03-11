@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/10 13:34:17 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/11 12:33:59 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,22 @@ typedef struct s_stack{
 	void	*prev;
 }		t_stack;
 
+typedef struct s_stacks{
+	t_stack	stack_a;
+	t_stack	stack_b;
+}		t_stacks;
+
 int			pars(int ac, char **av);
 void		err(void);
 void		clean(void *ptr);
 void		_clean_one(void *ptr);
 void		_clean_dbl(char **ptr);
 int			atoi_n_check(char *val);
-t_stack		*fill_list(int value);
-void		check_content(t_stack *stack_a);
+void		check_content(t_stacks *stacks);
 t_stack		*lstnew(int *value);
-void		lstadd_back(t_stack **stack_a, t_stack *new);
+void		lstadd_back(t_stacks **stacks, t_stack *new_a);
 t_stack		*lstlast(t_stack *stack_a, int *value);
 int			lstsize_n_check(t_stack *lst, int *value);
-void		backward_check_content(t_stack **stack_a);
+void		backward_check_content(t_stacks **stacks);
 
 #endif
