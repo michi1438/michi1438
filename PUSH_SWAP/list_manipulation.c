@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:14:05 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 17:18:58 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/12 19:13:36 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,10 @@ void	lstadd_back(t_stacks **stacks, t_stack *new_a)
 	t_stack	*new_b;
 
 	new_b = lstnew(NULL);
-	node_a = (*stacks)->stack_a;
-	node_b = (*stacks)->stack_b;
+	node_a = &(*stacks)->stack_a;
+	node_b = &(*stacks)->stack_b;
 	if (node_a != NULL)
 	{
-		printf("goes here\n");
 		last_a = lstlast(node_a, new_a->content);
 		last_b = lstlast(node_b, new_b->content);
 		new_a->prev = last_a;
@@ -70,7 +69,7 @@ t_stack	*lstlast(t_stack *stack_a, int *value)
 	return (fwd);
 }
 
-int	lstsize_n_check(t_stack *lst, int *value)
+int	lstsize_n_check(t_stack *lst, int *val)
 {
 	int			i;
 	t_stack		*fwd;
@@ -79,7 +78,7 @@ int	lstsize_n_check(t_stack *lst, int *value)
 	fwd = lst;
 	while (fwd != NULL)
 	{
-		if (fwd->content != NULL && *fwd->content == *value)
+		if (val != NULL && fwd->content != NULL && *fwd->content == *val)
 			err();
 		fwd = fwd->next;
 		i++;

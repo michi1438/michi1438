@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:15:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 13:11:29 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/12 19:15:34 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,15 +53,15 @@ void	cleanlst(t_stacks *stacks)
 	while (node_a != NULL)
 	{
 		if (node_a->content != NULL)
-			printf("node_a :%d\n", *node_a->content);
-		free(node_a->content);
+			free(node_a->content);
 		if (node_a != NULL)
 			node_a = free_n_next(node_a);
 	}
-	if (node_b != NULL)
-		printf("node_b :%p\n", node_b);
-/*	while (node_b != NULL)
+	while (node_b != NULL)
 	{
-		node_b = free_n_next(node_b);
-	}*/
+		if (node_b->content != NULL)
+			free(node_a->content);
+		if (node_b != NULL && node_b->next != NULL)
+			node_b = free_n_next(node_b);
+	}
 }
