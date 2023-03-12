@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:14:05 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/11 23:23:54 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/12 17:18:58 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_stack	*lstnew(int *value)
 	if (ptr == NULL)
 		err();
 	ptr->next = NULL;
+	ptr->prev = NULL;
 	ptr->content = value;
 	return (ptr);
 }
@@ -33,10 +34,11 @@ void	lstadd_back(t_stacks **stacks, t_stack *new_a)
 	t_stack	*new_b;
 
 	new_b = lstnew(NULL);
-	node_a = &(*stacks)->stack_a;
-	node_b = &(*stacks)->stack_b;
+	node_a = (*stacks)->stack_a;
+	node_b = (*stacks)->stack_b;
 	if (node_a != NULL)
 	{
+		printf("goes here\n");
 		last_a = lstlast(node_a, new_a->content);
 		last_b = lstlast(node_b, new_b->content);
 		new_a->prev = last_a;

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/11 22:58:08 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/12 17:17:49 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,7 @@ int	_pars_one(char *av, t_stacks *stacks)
 		*value = atoi_n_check(splited[i++]);
 		lstadd_back(&stacks, lstnew(value));
 	}
-	check_content(stacks);
-	backward_check_content(&stacks);
+	start_sort(stacks);
 	_clean_dbl(splited);
 	cleanlst(stacks);
 	return (0);
@@ -80,8 +79,7 @@ int	_pars_mult(int ac, char **av, t_stacks *stacks)
 		lstadd_back(&stacks, lstnew(value));
 		i++;
 	}
-	check_content(stacks);
-	backward_check_content(&stacks);
+	start_sort(stacks);
 	cleanlst(stacks);
 	return (0);
 }
