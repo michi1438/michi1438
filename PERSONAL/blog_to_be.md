@@ -860,3 +860,17 @@ galaxies form by gradual accumulation.
 Although this is the most commonly accepted theory, other astrophysicists argue for different models or revision of general relativity.
 These would be, the modified Newtonian dynamics, tensor-vector-scalar gravity, entropic gravity, those try to explain all observation 
 without invoking non-baryonic matter.  
+
+# 12/03/2023
+About Dark energy, it is also a place-holder name for an energy not yet discovered, it affects the univers on a large scale, and is 
+not very visible from our standing point. It's been theorized after the witnessing of multiple supernovas, they showed that the universe 
+did not seem to expand at constant rate but rather an accelerating one. Before this it was thought that the total of masses and energy 
+in the univers was going to slow down the expansion of the universe over time. There was no other way to introduce the accelerating 
+expansion of the universe without a new variable, the as of yet unexplained, "dark energy". The current estimate indicate that dark 
+energy takes about 68% of the total energy in the present observerbal universe. In the total mass-energy ordinary (baryonic) and 
+dark matter contributes 26%, and 5% respectively. 
+Dark energy is often called "vaccum energy of space" as it seems to be the external energy pulling the universe to an acceleration, 
+there are many different theorise on how to incorporate this new notion in the models we already know or how to create new ones to 
+take it into account, the  "Cosmological constant" is the most widely acknowledge an fits the "dark energy" as a Cosmological constant,
+in this model it spreads itself through the universe homogeneously (Lambda-CDM model). A second proposition is that of the "Quintessence"
+where the dark energy is visualized more as a dynamical field. 

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/11 12:33:59 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/11 23:23:57 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ void		lstadd_back(t_stacks **stacks, t_stack *new_a);
 t_stack		*lstlast(t_stack *stack_a, int *value);
 int			lstsize_n_check(t_stack *lst, int *value);
 void		backward_check_content(t_stacks **stacks);
+void		cleanlst(t_stacks *stacks);
 
 #endif

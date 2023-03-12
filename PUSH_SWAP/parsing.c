@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/11 12:12:13 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/11 22:58:08 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	_pars_one(char *av, t_stacks *stacks)
 	check_content(stacks);
 	backward_check_content(&stacks);
 	_clean_dbl(splited);
-	//cleanlst(stacks);
+	cleanlst(stacks);
 	return (0);
 }
 
@@ -82,6 +82,6 @@ int	_pars_mult(int ac, char **av, t_stacks *stacks)
 	}
 	check_content(stacks);
 	backward_check_content(&stacks);
-	//cleanlst(stacks);
+	cleanlst(stacks);
 	return (0);
 }
