@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 17:17:49 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/13 10:29:03 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	pars(int ac, char **av)
 	t_stacks	*stacks;
 
 	stacks = malloc(sizeof(t_stacks));
+	stacks->stack_a = malloc(sizeof(t_stack));
+	stacks->stack_b = malloc(sizeof(t_stack));
 	if (ac == 2)
 		return (_pars_one(av[1], stacks));
 	else if (ac > 2)
@@ -80,6 +82,7 @@ int	_pars_mult(int ac, char **av, t_stacks *stacks)
 		i++;
 	}
 	start_sort(stacks);
+	printf("passed\n");
 	cleanlst(stacks);
 	return (0);
 }

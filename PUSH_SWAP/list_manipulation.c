@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:14:05 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 19:13:36 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/13 11:11:08 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,27 +28,27 @@ t_stack	*lstnew(int *value)
 void	lstadd_back(t_stacks **stacks, t_stack *new_a)
 {
 	t_stack	*last_a;
-	t_stack	*node_a;
+	t_stack	**node_a;
 	t_stack	*last_b;
-	t_stack	*node_b;
+	t_stack	**node_b;
 	t_stack	*new_b;
 
 	new_b = lstnew(NULL);
-	node_a = &(*stacks)->stack_a;
-	node_b = &(*stacks)->stack_b;
-	if (node_a != NULL)
+	node_a = (*stacks)->stack_a;
+	node_b = (*stacks)->stack_b;
+	if (*node_a != NULL)
 	{
-		last_a = lstlast(node_a, new_a->content);
-		last_b = lstlast(node_b, new_b->content);
+		last_a = lstlast(*node_a, new_a->content);
+		last_b = lstlast(*node_b, new_b->content);
 		new_a->prev = last_a;
-		last_a->next = new_a;
 		new_b->prev = last_b;
+		last_a->next = new_a;
 		last_b->next = new_b;
 	}
 	else
 	{
-		node_a = new_a;
-		node_b = new_b;
+		*node_a = new_a;
+		*node_b = new_b;
 	}
 }
 

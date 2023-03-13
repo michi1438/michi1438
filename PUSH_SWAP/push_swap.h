@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/13 09:29:01 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/13 10:21:30 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ typedef struct s_stack{
 }		t_stack;
 
 typedef struct s_stacks{
-	t_stack	stack_a;
-	t_stack	stack_b;
+	t_stack	**stack_a;
+	t_stack	**stack_b;
 }		t_stacks;
 
 typedef void	(*t_operations)();
