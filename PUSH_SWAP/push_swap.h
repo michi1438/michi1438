@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 18:34:04 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/13 09:29:01 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,7 @@ void		backward_check_content(t_stacks **stacks);
 void		cleanlst(t_stacks *stacks);
 void		start_sort(t_stacks *stacks);
 void		sa(t_stacks *stacks);
+void		sb(t_stacks *stacks);
+void		ss(t_stacks *stacks);
 
 #endif

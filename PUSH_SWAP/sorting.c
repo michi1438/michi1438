@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 14:06:07 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 19:19:48 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/13 09:28:46 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	start_sort(t_stacks *stacks)
 	if (lstsize_n_check(node_a, NULL) < 7)
 	{
 		printf("send <= 5 args algorithm\n");
+		check_content(stacks);
+		ss(stacks);
 		check_content(stacks);
 	}
 	else
