@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sorting.c                                          :+:      :+:    :+:   */
+/*   list_manip_sort.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/12 14:06:07 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/14 13:08:55 by mguerga          ###   ########.fr       */
+/*   Created: 2023/03/14 12:11:38 by mguerga           #+#    #+#             */
+/*   Updated: 2023/03/14 13:34:41 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	start_sort(t_stacks *stacks)
+void	lstadd_front(t_stack **stack, t_stack *new)
 {
-	t_stack	*node_a;
+	new->next = *stack;
+	new->prev = NULL;
+	*stack = new;
+}
 
-	node_a = *stacks->stack_a;
-	if (lstsize_n_check(node_a, NULL) < 6)
+void	del_one_node(t_stack **node)
+{
+	
+	if ((*node)->next != NULL)
 	{
-		printf("send <= 5 args algorithm\n");
-		check_content(stacks);
-		pa(stacks);
-		check_content(stacks);
+		*node = (*node)->next;
+		free((*node)->prev);
+		(*node)->prev = NULL;
 	}
 	else
-	{
-		printf("send > 5 args algorithm\n");
-	}
+		free(*node);
 }

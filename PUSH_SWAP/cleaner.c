@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:15:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/12 19:15:34 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/14 13:05:14 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,20 +48,16 @@ void	cleanlst(t_stacks *stacks)
 	t_stack	*node_a;
 	t_stack	*node_b;
 
-	node_a = &stacks->stack_a;
-	node_b = &stacks->stack_b;
+	node_a = *stacks->stack_a;
+	node_b = *stacks->stack_b;
 	while (node_a != NULL)
 	{
-		if (node_a->content != NULL)
-			free(node_a->content);
-		if (node_a != NULL)
-			node_a = free_n_next(node_a);
+		free(node_a->content);
+		node_a = free_n_next(node_a);
 	}
 	while (node_b != NULL)
 	{
-		if (node_b->content != NULL)
-			free(node_a->content);
-		if (node_b != NULL && node_b->next != NULL)
-			node_b = free_n_next(node_b);
+		node_b = free_n_next(node_b);
 	}
+	free(stacks);
 }

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/13 10:21:30 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/14 12:27:02 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void		_clean_dbl(char **ptr);
 int			atoi_n_check(char *val);
 void		check_content(t_stacks *stacks);
 t_stack		*lstnew(int *value);
-void		lstadd_back(t_stacks **stacks, t_stack *new_a);
+void		lstadd_back(t_stack **stack, t_stack *new_a);
 t_stack		*lstlast(t_stack *stack_a, int *value);
 int			lstsize_n_check(t_stack *lst, int *value);
 void		backward_check_content(t_stacks **stacks);
@@ -60,5 +60,10 @@ void		start_sort(t_stacks *stacks);
 void		sa(t_stacks *stacks);
 void		sb(t_stacks *stacks);
 void		ss(t_stacks *stacks);
+void		pa(t_stacks *stacks);
+void		pb(t_stacks *stacks);
+void		pb(t_stacks *stacks);
+void		lstadd_front(t_stack **stack, t_stack *new);
+void		del_one_node(t_stack **stack);
 
 #endif

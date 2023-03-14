@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:14:05 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/13 11:11:08 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/14 11:48:56 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,40 +25,29 @@ t_stack	*lstnew(int *value)
 	return (ptr);
 }
 
-void	lstadd_back(t_stacks **stacks, t_stack *new_a)
+void	lstadd_back(t_stack **stack, t_stack *new)
 {
-	t_stack	*last_a;
-	t_stack	**node_a;
-	t_stack	*last_b;
-	t_stack	**node_b;
-	t_stack	*new_b;
+	t_stack	*last;
+	t_stack	**node;
 
-	new_b = lstnew(NULL);
-	node_a = (*stacks)->stack_a;
-	node_b = (*stacks)->stack_b;
-	if (*node_a != NULL)
+	node = stack;
+	if (*node != NULL)
 	{
-		last_a = lstlast(*node_a, new_a->content);
-		last_b = lstlast(*node_b, new_b->content);
-		new_a->prev = last_a;
-		new_b->prev = last_b;
-		last_a->next = new_a;
-		last_b->next = new_b;
+		last = lstlast(*node, new->content);
+		new->prev = last;
+		last->next = new;
 	}
 	else
-	{
-		*node_a = new_a;
-		*node_b = new_b;
-	}
+		*node = new;
 }
 
-t_stack	*lstlast(t_stack *stack_a, int *value)
+t_stack	*lstlast(t_stack *stack, int *value)
 {
 	t_stack		*fwd;
 	int			lastn;
 	int			i;
 
-	fwd = stack_a;
+	fwd = stack;
 	i = 0;
 	lastn = lstsize_n_check(fwd, value);
 	while (i < (lastn - 1))

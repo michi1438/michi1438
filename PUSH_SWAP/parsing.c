@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/13 10:29:03 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/14 11:49:34 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	_pars_one(char *av, t_stacks *stacks)
 		}
 		value = malloc(sizeof(int));
 		*value = atoi_n_check(splited[i++]);
-		lstadd_back(&stacks, lstnew(value));
+		lstadd_back(stacks->stack_a, lstnew(value));
 	}
 	start_sort(stacks);
 	_clean_dbl(splited);
@@ -78,11 +78,10 @@ int	_pars_mult(int ac, char **av, t_stacks *stacks)
 		}
 		value = malloc(sizeof(int));
 		*value = atoi_n_check(av[i]);
-		lstadd_back(&stacks, lstnew(value));
+		lstadd_back(stacks->stack_a, lstnew(value));
 		i++;
 	}
 	start_sort(stacks);
-	printf("passed\n");
 	cleanlst(stacks);
 	return (0);
 }
