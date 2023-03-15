@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 14:02:04 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/14 13:18:02 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/15 13:57:31 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,30 @@ void	pa(t_stacks *stacks)
 	t_stack	**node_a;
 
 	node_a = stacks->stack_a;
-	temp = (*node_a)->content;
-	lstadd_front(stacks->stack_b, lstnew(temp));
-	del_one_node(node_a);
+	if (*node_a != NULL)
+	{
+		temp = (*node_a)->content;
+		lstadd_front(stacks->stack_b, lstnew(temp));
+		del_one_node(node_a);
+		ft_printf("PA\n");
+	}
+	else
+		ft_printf("PA err; no val in *stack_a\n");
+}
+
+void	pb(t_stacks *stacks)
+{
+	int		*temp;
+	t_stack	**node_b;
+
+	node_b = stacks->stack_b;
+	if (*node_b != NULL)
+	{
+		temp = (*node_b)->content;
+		lstadd_front(stacks->stack_a, lstnew(temp));
+		del_one_node(node_b);
+		ft_printf("PB\n");
+	}
+	else
+		ft_printf("PA err; no val in *stack_b\n");
 }

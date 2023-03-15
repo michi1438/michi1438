@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 12:50:58 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/14 13:13:20 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/15 17:13:10 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,17 @@ void	check_content(t_stacks *stacks)
 	node_b = *stacks->stack_b;
 	while (node_a != NULL)
 	{
-		printf("content_a :%d\n", *node_a->content);
+		ft_printf("content_a :%d\n", *node_a->content);
 		node_a = node_a->next;
+		ft_printf("\n");
 	}
 	while (node_b != NULL)
 	{
-		printf("content_b :%d\n", *node_b->content);
+		ft_printf("content_b :%d\n", *node_b->content);
 		node_b = node_b->next;
+		ft_printf("\n");
 	}
-	printf("\n");
+	ft_printf("\n");
 }
 
 void	backward_check_content(t_stacks **stacks)
@@ -43,11 +45,13 @@ void	backward_check_content(t_stacks **stacks)
 	{
 		printf("bkw_a_ content :%d\n", *bkw_a->content);
 		bkw_a = bkw_a->prev;
+		printf("\n");
 	}
 	while (bkw_b != NULL)
 	{
 		printf("bkw_b_ content :%d\n", *bkw_b->content);
 		bkw_b = bkw_b->prev;
+		printf("\n");
 	}
 	printf("\n");
 }

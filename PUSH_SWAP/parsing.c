@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/14 11:49:34 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/15 16:14:37 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	pars(int ac, char **av)
 	else if (ac > 2)
 		return (_pars_mult(ac, av, stacks));
 	else if (ac == 1)
-		return (1);
+		return (0);
 	else
 		return (0);
 }
