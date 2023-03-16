@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 14:02:04 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 13:57:31 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/17 00:18:33 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,14 @@ void	sa(t_stacks *stacks)
 	int		*temp;
 
 	first_a = *stacks->stack_a;
-	if (lstsize_n_check(first_a, NULL) > 1)
+	if (lstsize_n_check(first_a, NULL) > 1 && first_a->content != NULL)
 	{
 		temp = first_a->content;
 		secon_a = first_a->next;
 		first_a->content = secon_a->content;
 		secon_a->content = temp;
-		ft_printf("SA\n");
+		ft_printf("sa\n");
 	}
-	else
-		ft_printf("SA err; less than two value in stack a\n");
 }
 
 void	sb(t_stacks *stacks)
@@ -44,20 +42,11 @@ void	sb(t_stacks *stacks)
 		secon_b = first_b->next;
 		first_b->content = secon_b->content;
 		secon_b->content = temp;
-		ft_printf("SB\n");
+		ft_printf("sb\n");
 	}	
-	else
-		ft_printf("SB err; less than two val in stack b or value(s) are Null\n");
 }
 
-void	ss(t_stacks *stacks)
-{
-	ft_printf("SS includes :\n");
-	sa(stacks);
-	sb(stacks);
-}
-
-void	pa(t_stacks *stacks)
+void	pb(t_stacks *stacks)
 {
 	int		*temp;
 	t_stack	**node_a;
@@ -67,14 +56,12 @@ void	pa(t_stacks *stacks)
 	{
 		temp = (*node_a)->content;
 		lstadd_front(stacks->stack_b, lstnew(temp));
-		del_one_node(node_a);
-		ft_printf("PA\n");
+		del_first_node(node_a);
+		ft_printf("pb\n");
 	}
-	else
-		ft_printf("PA err; no val in *stack_a\n");
 }
 
-void	pb(t_stacks *stacks)
+void	pa(t_stacks *stacks)
 {
 	int		*temp;
 	t_stack	**node_b;
@@ -84,9 +71,7 @@ void	pb(t_stacks *stacks)
 	{
 		temp = (*node_b)->content;
 		lstadd_front(stacks->stack_a, lstnew(temp));
-		del_one_node(node_b);
-		ft_printf("PB\n");
+		del_first_node(node_b);
+		ft_printf("pa\n");
 	}
-	else
-		ft_printf("PA err; no val in *stack_b\n");
 }

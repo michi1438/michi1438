@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:15:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 17:10:40 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/17 00:33:47 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_stack		*free_n_next(t_stack *node);
 void	clean(void *ptr)
 {
 	
-	printf("%p\n", ptr);
+	ft_printf("%p\n", ptr);
 }
 */
 
@@ -58,7 +58,7 @@ void	cleanlst(t_stacks *stacks)
 		*node_a = free_n_next(*node_a);
 	}
 	free(node_a);
-	while (node_b != NULL)
+	while (node_b != NULL && (*node_b) != NULL)
 	{
 		free((*node_b)->content);
 		*node_b = free_n_next(*node_b);

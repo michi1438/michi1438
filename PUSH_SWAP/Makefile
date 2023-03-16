@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/01 00:16:04 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/14 12:10:32 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/17 00:25:38 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,9 @@ CC = gcc
 
 CFLAGS = -Werror -Wextra -Wall #-g3 -fsanitize=leak
 
-SRC = main.c err_handling.c parsing.c cleaner.c checking.c list_manip_init.c \
-	  list_enum.c op_swap_push.c sorting.c list_manip_sort.c
+SRC = main.c err_handling.c parsing.c cleaner.c checking_n_atoi.c \
+	  list_manip_init.c op_both_stacks.c \
+	  list_enum.c op_swap_push.c sorting.c list_manip_sort.c op_rotate.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -38,3 +39,13 @@ fclean: clean
 
 re: fclean
 	make all
+
+leaks:
+	leaks -atExit -- ./$(NAME) $(ARG)
+	leaks -atExit -- ./$(NAME) $(ARG1)
+	leaks -atExit -- ./$(NAME) $(ARG2)
+
+run:
+	./$(NAME) $(ARG)
+	./$(NAME) $(ARG1)
+	./$(NAME) $(ARG2)

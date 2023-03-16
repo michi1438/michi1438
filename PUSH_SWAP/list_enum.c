@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 12:50:58 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 17:13:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/17 00:33:30 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,15 +43,15 @@ void	backward_check_content(t_stacks **stacks)
 	bkw_b = lstlast(*(*stacks)->stack_b, NULL);
 	while (bkw_a != NULL)
 	{
-		printf("bkw_a_ content :%d\n", *bkw_a->content);
+		ft_printf("bkw_a_ content :%d\n", *bkw_a->content);
 		bkw_a = bkw_a->prev;
-		printf("\n");
+		ft_printf("\n");
 	}
 	while (bkw_b != NULL)
 	{
-		printf("bkw_b_ content :%d\n", *bkw_b->content);
+		ft_printf("bkw_b_ content :%d\n", *bkw_b->content);
 		bkw_b = bkw_b->prev;
-		printf("\n");
+		ft_printf("\n");
 	}
-	printf("\n");
+	ft_printf("\n");
 }

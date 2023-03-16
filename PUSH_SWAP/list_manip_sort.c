@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:11:38 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 16:36:39 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/16 17:04:02 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 void	lstadd_front(t_stack **stack, t_stack *new)
 {
+	if (*stack != NULL)
+	{
+		(*stack)->prev = new;
+	}
 	new->next = *stack;
 	new->prev = NULL;
 	*stack = new;
 }
 
-void	del_one_node(t_stack **node)
+void	del_first_node(t_stack **node)
 {
 	if ((*node)->next != NULL && *node != NULL)
 	{
@@ -33,4 +37,14 @@ void	del_one_node(t_stack **node)
 		free(*node);
 		*node = NULL;
 	}
+}
+
+void	del_last_node(t_stack **node)
+{
+	t_stack	*last;
+
+	last = lstlast(*node, NULL);
+	last = last->prev;
+	free(last->next);
+	last->next = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:04:34 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 16:14:37 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/16 16:20:21 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,7 @@ int	_pars_one(char *av, t_stacks *stacks)
 	{
 		j = 0;
 		while (splited[i][j] != '\0')
-		{
-			if (ft_isalpha(splited[i][j]))
-				return (1);
 			j++;
-		}
 		value = malloc(sizeof(int));
 		*value = atoi_n_check(splited[i++]);
 		lstadd_back(stacks->stack_a, lstnew(value));
@@ -61,7 +57,6 @@ int	_pars_one(char *av, t_stacks *stacks)
 }
 
 int	_pars_mult(int ac, char **av, t_stacks *stacks)
-
 {
 	int		i;
 	int		j;
@@ -72,10 +67,7 @@ int	_pars_mult(int ac, char **av, t_stacks *stacks)
 	{
 		j = 0;
 		while (av[i][j] != '\0')
-		{
-			if ((ft_isalpha(av[i][j++])))
-				return (1);
-		}
+			j++;
 		value = malloc(sizeof(int));
 		*value = atoi_n_check(av[i]);
 		lstadd_back(stacks->stack_a, lstnew(value));

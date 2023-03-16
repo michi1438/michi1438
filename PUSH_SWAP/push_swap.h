@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/15 13:57:40 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/16 17:18:39 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,14 @@ void		sb(t_stacks *stacks);
 void		ss(t_stacks *stacks);
 void		pa(t_stacks *stacks);
 void		pb(t_stacks *stacks);
-void		pb(t_stacks *stacks);
+void		ra(t_stacks *stacks);
+void		rb(t_stacks *stacks);
+void		rr(t_stacks *stacks);
+void		rra(t_stacks *stacks);
+void		rrb(t_stacks *stacks);
+void		rrr(t_stacks *stacks);
 void		lstadd_front(t_stack **stack, t_stack *new);
-void		del_one_node(t_stack **stack);
+void		del_first_node(t_stack **stack);
+void		del_last_node(t_stack **node);
 
 #endif
