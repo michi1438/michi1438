@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/16 17:18:39 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/17 13:00:10 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,7 @@ void		rrr(t_stacks *stacks);
 void		lstadd_front(t_stack **stack, t_stack *new);
 void		del_first_node(t_stack **stack);
 void		del_last_node(t_stack **node);
+void		under_six(t_stacks *stacks);
+int			calc_small_index(t_stack *node);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 14:06:07 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/17 00:12:51 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/17 15:38:17 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,58 @@ void	start_sort(t_stacks *stacks)
 	{
 		ft_printf("send <= 5 args algorithm\n");
 		check_content(stacks);
-		sa(stacks);
-		pb(stacks);
-		pb(stacks);
-		pb(stacks);
-		rr(stacks);
-		rrr(stacks);
-		sa(stacks);
-		pa(stacks);
-		pa(stacks);
-		pa(stacks);
+		under_six(stacks);
 		check_content(stacks);
 	}
 	else
 	{
 		ft_printf("send > 7 args algorithm\n");
 	}
+}
+
+void	under_six(t_stacks *stacks)
+{
+	int	minindex;
+	int	size;
+	int	totsize;
+
+	size = lstsize_n_check(*stacks->stack_a, NULL);
+	totsize = size;
+	while (totsize - size < 3)
+	{
+		minindex = calc_small_index(*stacks->stack_a);
+		if (minindex == 1)
+			pb(stacks);
+		else if (minindex == 2)
+			sa(stacks);
+		else if (size - minindex < 2)
+			rra(stacks);
+		else if (size - minindex > 1)
+			ra(stacks);
+		size = lstsize_n_check(*stacks->stack_a, NULL);
+	}
+}
+
+int	calc_small_index(t_stack *node)
+{
+	int		totsize;
+	int		min;
+	int		y;
+	int		minindex;
+
+	totsize = lstsize_n_check(node, NULL);
+	y = 0;
+	min = *node->content;
+	minindex = 1;
+	while (y < totsize)
+	{
+		if (*node->content < min)
+		{
+			min = *node->content;
+			minindex = y + 1;
+		}
+		node = node->next;
+		y++;
+	}
+	return (minindex);
 }
