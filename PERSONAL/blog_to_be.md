@@ -875,4 +875,16 @@ take it into account, the  "Cosmological constant" is the most widely acknowledg
 in this model it spreads itself through the universe homogeneously (Lambda-CDM model). A second proposition is that of the "Quintessence"
 where the dark energy is visualized more as a dynamical field. 
 
+# 20/03/2023
+I've been messing around with this microcontroler, called Elegoo, there are a lot of new concepts linked to circutry, the very theorical 
+part of resistance Ohm's, joule's first law and the way a diode or more generaly a semiconductor works, then there is the more hands on 
+side of circuitry that is hard to output for me in text...
+Joule's first law is also called joule heating, resistive, resistance, or Ohmic heating, it is in essence the heat produced by current 
+passing through a conductor. 
+P = I^2 * R; This formula say's Power is equal to Intensity squared times the resistance.
+This Joule's law comes from James Prescott Joule 1818 - 1889, he was an English physicist, mathematician and brewer (cool dude).
+A potential difference (voltage) between two points of a conductor creates an electric field that accelarates a charge carrier in the
+direction of the electric field, giving them kinetic energy. When the charge particles collid with the quasi-particles (I don't know what 
+quasi-particles are, do ask) in the conductor, the energy ends up being transfered from the electrons to the lattice, the oscillations of
+the ions are the origin of the radiation ("thermal energy").
 

@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/03/01 00:16:04 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/26 19:46:25 by mguerga          ###   ########.fr        #
+#    Created: 2023/03/27 10:56:05 by mguerga           #+#    #+#              #
+#    Updated: 2023/03/27 10:56:09 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ fclean: clean
 	make fclean -C ./ft_libft_printf_gnl
 
 re: fclean
-	make all
+	make
 
 leaks:
 	leaks -atExit -- ./$(NAME) $(ARG)
