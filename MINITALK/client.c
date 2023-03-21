@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:03:37 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/21 18:21:02 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/21 21:28:24 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,17 @@ int	main(int ac, char **av)
 	int					i;
 
 	i = 0;
+	if (ac != 3)
+		ft_err(ERR_NOT_3_ARG);
 	serv_pid = ft_atoi(av[1]);
-	parsing(serv_pid, ac, av);
+	parsing(serv_pid, av);
 	while (av[2][i] != '\0')
 	{
 		ft_printf("c = %d\n", (int)av[2][i]);
 		bitify((int)(av[2][i]), serv_pid);
 		i++;
 	}
+	bitify('\n', serv_pid);
 	return (0);
 }
 
@@ -42,11 +45,13 @@ void	bitify(int c, int serv_pid)
 		{
 			kill(serv_pid, SIGUSR1);
 			c -= bit_size;
+			printf(" 1");
 			usleep(300);
 		}
 		else
 		{
 			kill(serv_pid, SIGUSR2);
+			printf(" 0");
 			usleep(300);
 		}
 		bit_size /= 2;
@@ -54,13 +59,11 @@ void	bitify(int c, int serv_pid)
 	}
 }
 
-void	parsing(int serv_pid, int ac, char **av)
+void	parsing(int serv_pid, char **av)
 {
 	int	i;
 
 	i = 0;
-	if (ac != 3)
-		ft_err(ERR_NOT_3_ARG);
 	while (av[1][i] != '\0')
 	{
 		if (!(ft_isdigit(av[1][i])))

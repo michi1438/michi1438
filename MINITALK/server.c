@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:03:37 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/21 18:29:14 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/21 21:25:19 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,23 +44,20 @@ void	set_sigusr(void)
 void	btoc(int c)
 {
 	static int			i;
-	static int					ch;
-	int					bit_size;
+	static int			ch;
 
-	bit_size = 128;
-	if (i <= 7)
+	if (i <= 8)
 	{
-		printf("passed  %d\n", i);
 		if (c == 10)
-			ch += bit_size;
-		bit_size /= 2;
-		ft_printf(" ch = %d\n", ch);
+			ch += g_bit_size;
+		g_bit_size /= 2;
 		i++;
 	}
-	if (i == 7)
+	if (i == 8)
 	{
 		write(1, &ch, 1);
 		i = 0;
+		g_bit_size = 128;
 		ch = 0;
 	}
 }

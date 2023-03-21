@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:05:20 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/21 14:14:34 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/21 21:28:05 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		main(int ac, char **av);
 void	ft_err(char *err_msg);
 void	set_sigusr(struct sigaction *act);
 void	*print_in_server(int useless);
-void	parsing(int serv_pid, int ac, char **av);
+void	parsing(int serv_pid, char **av);
 void	bitify(int c, int serv_pid);
 
 #endif
