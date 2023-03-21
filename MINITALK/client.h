@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:05:20 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/21 21:28:05 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/21 21:37:52 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <signal.h>
 # include "ft_libft_printf_gnl/ft_libft_printf_gnl.h"
 
-int		main(int ac, char **av);
+int	main(int ac, char **av);
 void	ft_err(char *err_msg);
 void	set_sigusr(struct sigaction *act);
 void	*print_in_server(int useless);

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:03:37 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/21 21:28:24 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/21 21:43:40 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,13 @@ void	bitify(int c, int serv_pid)
 			kill(serv_pid, SIGUSR1);
 			c -= bit_size;
 			printf(" 1");
-			usleep(300);
+			usleep(5);
 		}
 		else
 		{
 			kill(serv_pid, SIGUSR2);
 			printf(" 0");
-			usleep(300);
+			usleep(5);
 		}
 		bit_size /= 2;
 		bits--;
