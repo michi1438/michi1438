@@ -888,3 +888,29 @@ direction of the electric field, giving them kinetic energy. When the charge par
 quasi-particles are, do ask) in the conductor, the energy ends up being transfered from the electrons to the lattice, the oscillations of
 the ions are the origin of the radiation ("thermal energy").
 
+# 22/03/2023
+This is going to be about the semiconductor, the main idea is that the diode or the transistors (which are responsible for most of the 
+modern circuits, phones, computers...), are based on this material. There are obvious conductors like copper or gold, there ar some obvious
+insulator like plastic or rubber, and there are the less obvious like silicon (mainly), but also germanium, gallium arsenid and a few different
+elements near the "metalloid staircase" on the periodic table. In it's self silicon is not a good conductor on its own altought they are 
+sometimes used intrinsicly in this case they have a very low conductivity, it is based on the fact that electrons in the valence shell (the
+outer most shell) is saturated or not, we consider that atoms of elements that are conductor have less then 3 electrons in their valence 
+shell, copper, gold and platinium have 1, aluminium (a lesser conductor has 3), and our silicon has 4 exactly half of a saturated valence 
+shell, when those atoms group together they fill each others valence shell effectevily leaving us with 8 electrons in each atoms valence shell.
+This time it is saturated...
+
++---------------+----------+---------------+
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
+|               |          |               |
++---------------+----------+---------------+
