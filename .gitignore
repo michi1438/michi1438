@@ -1,9 +1,4 @@
 *.sw*
 *.dSYM
-a.out
 *.o
-*.a
-test
-fdf
-push_swap
-
+a.out
