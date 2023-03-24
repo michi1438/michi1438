@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:05:20 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/22 13:58:46 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/24 11:55:42 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ void	*print_in_server(int useless);
 void	parsing(int serv_pid, char **av);
 void	bitify(int c, int serv_pid);
 void	send_client_pid(pid_t client_pid, int serv_pid);
+void	client_confirm(int c);
+void	set_sigusr(struct sigaction *act);
+void	protected_kill(int serv_pid, int sig);
 
 #endif

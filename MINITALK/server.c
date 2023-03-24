@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 12:03:37 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/22 15:49:54 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/24 19:33:55 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(void)
 	ft_printf("Server pid :%d\n", getpid());
 	set_sigusr(act1, act2);
 	while (i == 0)
-		;
+		pause();
 	free(act1);
 	free(act2);
 	return (0);
@@ -44,40 +44,49 @@ void	set_sigusr(struct sigaction *act1, struct sigaction *act2)
 
 void	btoc(int c)
 {
-	static int			i;
-	static int			y;
-	static int			ch;
-	static int			flg_clt_pid;
+	static t_s_btoc		count;
 
-	if (i <= 8)
+	if (count.i++ != -10 && c == SIGUSR1)
+		count.ch += g_bit_size;
+	g_bit_size /= 2;
+	if (count.i == 9 && count.flg_clt_pid == 0)
 	{
-		if (c == 10)
-			ch += g_bit_size;
-		g_bit_size /= 2;
-		i++;
-	}
-	if (i == 8)
-	{
-		if (flg_clt_pid == 0)
+		if ((char)count.ch == '\0')
 		{
-			if ((char)ch == '\n')
-			{
-				g_client_pid[y] = '\0';
-				kill(ft_atoi(g_client_pid), SIGUSR1);
-				flg_clt_pid = 1;
-			}
-			g_client_pid[y] = (char)ch;
-			i = 0;
-			ch = 0;
-			g_bit_size = 128;
-			y++;
+			count.client_pid[count.y] = '\0';
+			count.y = 0;
+			count.flg_clt_pid = 1;
 		}
 		else
-		{
-			write(1, &ch, 1);
-			i = 0;
-			g_bit_size = 128;
-			ch = 0;
-		}
+			count.client_pid[count.y++] = (char)count.ch;
+		count = re_init(count);
 	}
+	else if (count.i == 9)
+	{
+		count.ch = (char)count.ch;
+		if ((char)count.ch == '\0')
+			count = protected_clt_kill(count);
+		write(1, &(count.ch), 1);
+		count = re_init(count);
+	}
+}
+
+t_s_btoc	re_init(t_s_btoc count)
+{
+	count.i = 0;
+	count.ch = 0;
+	g_bit_size = 256;
+	return (count);
+}
+
+t_s_btoc	protected_clt_kill(t_s_btoc count)
+{
+	if (kill(ft_atoi(count.client_pid), SIGUSR1) == -1)
+	{
+		ft_printf("confirmation signal failed !\n");
+		exit(0);
+	}
+	count.flg_clt_pid = 0;
+	count.ch = '\n';
+	return (count);
 }

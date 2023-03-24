@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/20 11:47:22 by mguerga           #+#    #+#              #
-#    Updated: 2023/03/22 15:53:34 by mguerga          ###   ########.fr        #
+#    Updated: 2023/03/24 14:24:27 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CC = gcc
 
 CFLAGS = -Werror -Wextra -Wall #-g3 -fsanitize=leak
 
-SRC_CLIENT = client.c 
+SRC_CLIENT = client.c client_bonus.c 
 
 SRC_SERVER = server.c
 
