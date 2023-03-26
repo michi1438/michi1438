@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/17 13:00:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/26 20:29:37 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,6 @@ typedef struct s_stacks{
 	t_stack	**stack_a;
 	t_stack	**stack_b;
 }		t_stacks;
-
-typedef void	(*t_operations)();
-
-typedef struct s_ope{
-	t_operations	sa;
-	t_operations	sb;
-	t_operations	ss;	
-	t_operations	pa;
-	t_operations	pb;
-	t_operations	ra;
-	t_operations	rb;
-	t_operations	rr;	
-	t_operations	rra;
-	t_operations	rrb;
-	t_operations	rrr;
-}		t_ope;
 
 int			pars(int ac, char **av);
 void		err(void);
@@ -73,5 +57,11 @@ void		del_first_node(t_stack **stack);
 void		del_last_node(t_stack **node);
 void		under_six(t_stacks *stacks);
 int			calc_small_index(t_stack *node);
+void		empty_stack_b(t_stacks *stacks);
+void		sort_restof_a(t_stacks *stacks);
+void		pre_sort(t_stacks *stacks);
+void		big_alg(t_stacks *stacks);
+int			find_smallest(t_stacks *stacks);
+int			find_median(t_stacks *stacks, int min);
 
 #endif
