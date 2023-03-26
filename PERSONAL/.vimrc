@@ -1,27 +1,31 @@
-set incsearch
-set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
+colorscheme meta5 
+
+set nocompatible
+set hidden
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
 set number
 set relativenumber
-set cursorline
+
 set nocursorcolumn
-" set syntax=on " prints error filetype uknown.
-" set colorcolumn=80
+"set colorcolumn=80
+set cursorline
 
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set nobackup
-set nowritebackup
-set ignorecase
-set smartcase
+
 set showcmd
 set showmode
 set showmatch
-set hlsearch
 
 set nowrap
 
@@ -76,6 +80,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'alexandregv/norminette-vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
+	Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 " Plugin code goes here.
@@ -104,6 +109,11 @@ inoremap <F1> <esc>:NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeFind<cr>
 nnoremap <F3> :Files<cr>
 inoremap <F3> <esc>:Files<cr>
+inoremap <c-w> <esc><c-w>
+nnoremap <c-w>s :vertical ter<cr>
+tnoremap <F1> <c-\><c-n>
+tnoremap <F2> <c-\><c-n>:vertical ter<cr>
+
 let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\,db$']
 
 " Mappings code goes here. 
@@ -115,14 +125,14 @@ let NERDTreeIgnore =['\.o$','\.a$', '\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.i
 " This will enable code folding.
 " Use the marker method of folding.
 augroup filetype_vim
-	autocmd!
-	autocmd FileType vim setlocal foldmethod=marker
+autocmd!
+autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
 if version >= 703
-	set undodir=~/.vim/backup
-	set undofile
-	set undoreload=10000
+set undodir=~/.vim/backup
+set undofile
+set undoreload=10000
 endif
 
 "	start nerdtree when vim is started without file arguments.
@@ -131,7 +141,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "	Automatically close a tab if the only remaining window is NerdTree.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-	
+
+autocmd BufWritePost *.c silent !ctags -R .
+
 " More Vimscripts code goes here.
 
 " }}}

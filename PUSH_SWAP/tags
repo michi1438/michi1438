@@ -138,7 +138,8 @@ fclean	Makefile	/^fclean: clean$/;"	t
 fclean	ft_libft_printf_gnl/Makefile	/^fclean: clean$/;"	t
 fclean	ft_libft_printf_gnl/get_next_line/Makefile	/^fclean: clean$/;"	t
 fclean	ft_libft_printf_gnl/libft/Makefile	/^fclean: clean$/;"	t
-find_mid_val	big_algo.c	/^int	find_mid_val(t_stacks *stacks)$/;"	f	typeref:typename:int
+find_median	big_algo.c	/^int	find_median(t_stacks *stacks, int min)$/;"	f	typeref:typename:int
+find_smallest	big_algo.c	/^int	find_smallest(t_stacks *stacks)$/;"	f	typeref:typename:int
 flag_parser	ft_libft_printf_gnl/printparser.c	/^char	*flag_parser(const char *str, int i)$/;"	f	typeref:typename:char *
 flglying	ft_libft_printf_gnl/optionctrl.c	/^void	*flglying(char *flag, t_toggler *flg)$/;"	f	typeref:typename:void *
 free_n_next	cleaner.c	/^t_stack	*free_n_next(t_stack *node)$/;"	f	typeref:typename:t_stack *

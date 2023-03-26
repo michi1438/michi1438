@@ -874,3 +874,5 @@ there are many different theorise on how to incorporate this new notion in the m
 take it into account, the  "Cosmological constant" is the most widely acknowledge an fits the "dark energy" as a Cosmological constant,
 in this model it spreads itself through the universe homogeneously (Lambda-CDM model). A second proposition is that of the "Quintessence"
 where the dark energy is visualized more as a dynamical field. 
+
+
