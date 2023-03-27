@@ -892,7 +892,7 @@ the ions are the origin of the radiation ("thermal energy").
 This is going to be about the semiconductor, the main idea is that the diode or the transistors (which are responsible for most of the 
 modern circuits, phones, computers...), are based on this material. There are obvious conductors like copper or gold, there ar some obvious
 insulator like plastic or rubber, and there are the less obvious like silicon (mainly), but also germanium, gallium arsenid and a few different
-elements near the "metalloid staircase" on the periodic table. In it's self silicon is not a good conductor on its own altought they are 
+elements near the "metalloid staircase" on the periodic table. In it's self silicon is not a good conductor, altought they are 
 sometimes used intrinsicly in this case they have a very low conductivity, it is based on the fact that electrons in the valence shell (the
 outer most shell) is saturated or not, we consider that atoms of elements that are conductor have less then 3 electrons in their valence 
 shell, copper, gold and platinium have 1, aluminium (a lesser conductor has 3), and our silicon has 4 exactly half of a saturated valence 
@@ -914,3 +914,16 @@ This time it is saturated...
 |               |          |               |
 |               |          |               |
 +---------------+----------+---------------+
+
+# 27/03/2023
+We left with our silicon atoms being saturted, this is good but the main use for silicon is different the use we have for its intrinsic form, 
+the next step in the creation of our diodes, transistors or other semiconductor based basic hardware, is doping. Again what makes a good insulator
+is the fact that the valence shell of the atoms is saturated, by adding a tiny proportion (1 in 10^8) of an element that holds 3 (trivalen; boron, 
+gallium or indium) or 5 (pentavalent; antimonium, phosphorus, arsenic) electrons in its valence shell, we are unbalencing the perfect saturated 
+cristaline structure of the silicon by one, and therefore allowing current to flow. We call a semiconductor that it is doped with donor impurities
+a n-type semiconductor (negative charge excess) because the added element has 5 electrons on it valence shell, the oposite is a semiconductor with 
+acceptor impurities, a p-type of semiconductor (positive charge excess) because the added element has 3 electrons in its valence shell and is 
+therefore letting current through these parts... Suprisingly those two semconductor types dont act the same way, next time we explore this 
+dichotomy in the study of a Diode or a Light emitting Diode. 
+
+
