@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 18:03:12 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/28 19:48:49 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/07 19:33:52 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,8 @@ int	main(int ac, char **av)
 {
 	if (pars(ac, av) != 0)
 		ft_err();
+}
+
+int someBSfunc
+{
 }
