@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/09 23:17:14 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/12 17:29:29 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,6 @@ void		push_index_b(int ind, int size, t_stacks *stacks);
 int			find_cheapest(t_stacks *stacks);
 int			find_cheapest_b(t_stacks *stacks);
 void		rot_to_ind_a(t_stacks *stacks, int ind, int i);
-void		rot_to_ind_b(t_stacks *stacks, int ind, int i);
 void		give_index(int i, int min, t_stacks *stacks);
 void		give_index_b(int i, int max, t_stacks *stacks);
 void		rb_sb_ss(t_stacks *stacks, int index_max);
