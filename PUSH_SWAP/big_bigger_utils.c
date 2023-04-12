@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:25:24 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/10 16:44:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/12 17:35:30 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,15 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 	t_stack		*node_b;
 	t_stack		*nxt_b;
 
+	node_b = *stacks->stack_b;
 	while (i-- > 1)
-		ra(stacks);
+	{
+		if (node_b != NULL && *node_b->index > *(lstlast(node_b, NULL)->index))
+			rr(stacks);
+		else
+			ra(stacks);
+		node_b = *stacks->stack_b;
+	}
 	node_a = *stacks->stack_a;
 	nxt_a = node_a->next;
 	node_b = *stacks->stack_b;
@@ -34,31 +41,6 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 	}
 	else if (node_a != NULL && *node_a->index != ind)
 		ra(stacks);
-}
-
-void	rot_to_ind_b(t_stacks *stacks, int ind, int i)
-{
-	t_stack		*node_a;
-	t_stack		*nxt_a;
-	t_stack		*node_b;
-	t_stack		*nxt_b;
-
-	node_b = *stacks->stack_b;
-	while (i-- > 1)
-		rb(stacks);
-	node_a = *stacks->stack_a;
-	nxt_a = node_a->next;
-	node_b = *stacks->stack_b;
-	nxt_b = node_a->next;
-	if (nxt_b != NULL && *nxt_b->index == *node_b->index - 1)
-	{
-		if (nxt_a != NULL && *nxt_a->index > *node_a->index)
-			ss(stacks);
-		else
-			sb(stacks);
-	}
-	else if (*node_b->index != ind)
-		rb(stacks);
 }
 
 void	give_index(int i, int min, t_stacks *stacks)
@@ -103,5 +85,4 @@ void	sorting(t_stacks *stacks)
 		size = lstsize_n_check(node_b, NULL);
 		index_max = find_largest_b(stacks);
 	}
-	pa(stacks);
 }
