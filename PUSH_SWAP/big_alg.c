@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:12:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/10 09:38:29 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/12 17:51:05 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,17 +46,15 @@ int	find_cheapest(t_stacks *stacks)
 	cheap_ind[1] = INT_MAX;
 	while (node_a != NULL)
 	{
-		if (*node_a->index + distance(i, size) < cheap_ind[1])
+		if ((*node_a->index) + distance(i, size) < cheap_ind[1])
 		{
 			cheap_ind[0] = *node_a->index;
 			cheap_ind[1] = *node_a->index + distance(i, size);
 			cheap_ind[2] = distance(i, size);
 		}
-		else if (*node_a->index + distance(i, size) == cheap_ind[1])
-		{	
+		else if ((*node_a->index) + distance(i, size) == cheap_ind[1])
 			if (distance(i, size) < cheap_ind[2])
 				cheap_ind[0] = *node_a->index;
-		}
 		node_a = node_a->next;
 		i++;
 	}
@@ -66,9 +64,12 @@ int	find_cheapest(t_stacks *stacks)
 void	push_index(int ind, int size, t_stacks *stacks)
 {
 	t_stack		*node_a;
+	t_stack		*next_a;
+	t_stack		*node_b;
 	int			i;
 
 	node_a = *stacks->stack_a;
+	node_b = *stacks->stack_b;
 	i = 0;
 	while (*node_a->index != ind)
 	{
@@ -84,8 +85,12 @@ void	push_index(int ind, int size, t_stacks *stacks)
 	{
 		while (i++ < size - 1)
 		{
-			rra(stacks);
+			if (node_b != NULL && *node_b->index < *lstlast(node_b, NULL)->index)
+				rrr(stacks);
+			else
+				rra(stacks);
 			node_a = *stacks->stack_a;
+			node_b = *stacks->stack_b;
 		}
 		rra_sa_rrr(stacks);
 	}
