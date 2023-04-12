@@ -1,0 +1,8 @@
+.*.sw*
+*.o
+*.a
+**/push_swap_tester/
+*.txt
+*.out
+*.tgz
+**/minilibx*/
