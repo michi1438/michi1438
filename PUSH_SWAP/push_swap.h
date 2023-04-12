@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/06 15:21:56 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/09 23:17:14 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,7 @@ void		ss__sb(t_stacks *stacks);
 void		rrr__rrb(t_stacks *stacks);
 void		rr__rb(t_stacks *stacks);
 void		ss__sb_c(t_stacks *stacks);
+int			no_other_candidat(t_stacks *stacks, int i, int size);
+void		empty_stack_a(t_stacks *stacks);
 
 #endif

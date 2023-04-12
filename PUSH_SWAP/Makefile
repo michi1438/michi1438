@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 10:56:05 by mguerga           #+#    #+#              #
-#    Updated: 2023/04/06 15:13:32 by mguerga          ###   ########.fr        #
+#    Updated: 2023/04/10 16:57:37 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = main.c err_handling.c parsing.c cleaner.c checking_n_atoi.c \
 	  big_bigger_utils.c radix_sort.c big_alg_utils.c op_both_stacks_supl.c
 
 SRCB = checker.c \
-	  err_handling.c cleaner.c checking_n_atoi.c \
+	  err_handling.c cleaner.c checking_n_atoi.c list_enum.c \
 	  list_manip_init.c op_both_stacks_check.c big_alg.c pre_sort_utils.c \
 	  op_swap_push_check.c sorting.c list_manip_sort.c op_rotate_check.c \
 	  big_bigger_utils.c radix_sort.c op_rotate.c op_swap_push.c \

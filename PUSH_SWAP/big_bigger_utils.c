@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:25:24 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/07 18:11:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/10 16:44:09 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 	nxt_a = node_a->next;
 	node_b = *stacks->stack_b;
 	nxt_b = node_a->next;
-	if (nxt_a != NULL && *nxt_a->index == *node_a->index - 1)
+	if (node_a != NULL && nxt_a != NULL && *nxt_a->index == *node_a->index - 1)
 	{
-		if (nxt_b != NULL && *nxt_b->index > *node_b->index)
+		if (node_b != NULL && nxt_b != NULL && *nxt_b->index > *node_b->index)
 			ss(stacks);
 		else
 			sa(stacks);
 	}
-	else if (*node_a->index != ind)
+	else if (node_a != NULL && *node_a->index != ind)
 		ra(stacks);
 }
 

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 19:37:58 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/04 20:53:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/10 09:36:19 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,11 @@ int	find_largest_b(t_stacks *stacks)
 int	distance(int i, int size)
 {
 	if (i <= size / 2)
+	{
 		return (i);
+	}
 	else
+	{
 		return (size - i);
+	}
 }

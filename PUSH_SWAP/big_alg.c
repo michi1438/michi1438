@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:12:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/06 13:45:40 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/10 09:38:29 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,10 @@ int	find_cheapest(t_stacks *stacks)
 			cheap_ind[2] = distance(i, size);
 		}
 		else if (*node_a->index + distance(i, size) == cheap_ind[1])
+		{	
 			if (distance(i, size) < cheap_ind[2])
 				cheap_ind[0] = *node_a->index;
+		}
 		node_a = node_a->next;
 		i++;
 	}
