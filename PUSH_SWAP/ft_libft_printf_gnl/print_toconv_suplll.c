@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 20:42:01 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:46:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 09:52:01 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	dealwithpospoints(t_toggler *flg, t_conv *cvut, int toconv)
 {
+	int	nlen;
+	int	wminp;
 	int	i;
 
 	i = 0;
@@ -21,7 +23,9 @@ void	dealwithpospoints(t_toggler *flg, t_conv *cvut, int toconv)
 	{
 		if (flg->plus == 1)
 			cvut->wid -= 1;
-		if (numlenneg(toconv, cvut) - cvut->wid < cvut->wid - cvut->precis > 0)
+		nlen = numlenneg(toconv, cvut);
+		wminp = cvut->wid - cvut->precis;
+		if (nlen - cvut->wid < wminp && wminp > 0)
 			while (i++ < cvut->wid - cvut->precis)
 				ft_putchar_fd(' ', 1);
 		else if (cvut->wid - (cvut->precis <= numlenneg(toconv, cvut)) > 0)
@@ -91,11 +95,14 @@ void	strshrinker(t_toggler *flg, t_conv *cvut, const char *toconv)
 
 void	cvutlenstr(t_conv *cvut, const char *toconv)
 {
+	int	convlen;
+
 	if (cvut->precis != 0 && (int)strlen(toconv) != 0)
 	{
+		convlen = (int)ft_strlen(toconv);
 		if ((int)ft_strlen(toconv) < cvut->wid)
 			cvut->len = cvut->wid;
-		else if ((int)ft_strlen(toconv) < cvut->precis < cvut->wid)
+		else if (convlen < cvut->precis && cvut->precis < cvut->wid)
 			cvut->len = (int)ft_strlen(toconv);
 		else if (cvut->precis <= (int)ft_strlen(toconv))
 			cvut->len = cvut->precis;
