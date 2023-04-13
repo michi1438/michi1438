@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:05:04 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/03/06 16:38:50 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 10:08:10 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,23 +70,6 @@ char	*freeandreplace(char *oldstr, char *stradd, int ind)
 		free (oldstr);
 		return (nptr);
 	}
-}
-
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	void	*ptr;
-	size_t	i;
-
-	i = 0;
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
-		return (NULL);
-	while (i < (nmemb * size))
-	{
-		((char *)(ptr))[i] = '\0';
-		i++;
-	}
-	return (ptr);
 }
 
 int	readforterm(char *buf, int toggle)

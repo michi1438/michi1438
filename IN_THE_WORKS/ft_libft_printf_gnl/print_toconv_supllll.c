@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 20:44:59 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:46:38 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 09:48:20 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int	testprintargint(int toconv, t_conv *cvut)
 {
 	t_toggler	*flg;
-	int			i;
 
-	i = 0;
 	flg = NULL;
 	flg = flglying(cvut->conv_flags, flg);
 	argintprt(flg, cvut, toconv);

@@ -6,13 +6,11 @@
 #    By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/02 15:48:03 by mguerga           #+#    #+#              #
-#    Updated: 2023/01/29 22:59:32 by mguerga          ###   ########.fr        #
+#    Updated: 2023/04/13 09:34:34 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-
-
 
 SRC = optionctrl_supl.c printfer.c printparser.c print_toconv.c optionctrl.c \
 	print_toconv_supll.c print_toconv_suplll.c print_toconv_supl.c \
@@ -24,12 +22,11 @@ OBJ = $(SRC:.c=.o)
 
 CC = gcc
 
-CFLAGS = 
+CFLAGS = -Werror -Wextra -Wall 
 
 all: $(NAME)
 
-#test: re
-#	$(CC) $(CFLAGS) -g -fsanitize=address *.o libft/*.o $(TSRC) -o TEST
+# To call the whole of ft_libft_printf_gnl you need \"-Lft_libft_printf_gnl/ -lftprintf\"
 
 libf:
 	make -C ./libft

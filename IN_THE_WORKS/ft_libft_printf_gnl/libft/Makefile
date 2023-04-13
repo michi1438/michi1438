@@ -6,7 +6,7 @@
 #    By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 20:18:13 by mguerga           #+#    #+#              #
-#    Updated: 2022/12/19 13:53:09 by xbeheydt         ###   ########.fr        #
+#    Updated: 2023/01/30 10:43:49 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ OBJS = $(SRC:.c=.o)
 OBJSB = $(SRCB:.c=.o)
 
 CC = gcc
+
 CFLAGS = -Werror -Wall -Wextra
 
 all: $(NAME) bonus
@@ -34,8 +35,8 @@ all: $(NAME) bonus
 $(NAME): $(OBJS)	
 	ar rc $(NAME) $(OBJS)
 
-bonus: $(OBJSB)
-	ar rc $(NAME) $(OBJSB)
+bonus: $(OBJS) $(OBJSB)
+	ar rc $(NAME) $(OBJS) $(OBJSB)
 
 clean:
 	rm -f *.o
