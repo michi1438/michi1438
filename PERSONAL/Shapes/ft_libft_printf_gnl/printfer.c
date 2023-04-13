@@ -6,7 +6,7 @@
 /*   By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:26:02 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/26 11:47:00 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/03/02 19:36:54 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_printf(const char *str, ...)
 			i++;
 			cvut = create_cvut(str, i, cvut);
 			i = placeva(ret, cvut, i, perc);
-			free(cvut);
+			cleaner(cvut);
 		}
 		else
 		{
@@ -46,6 +46,12 @@ int	testperc(t_conv *cvut)
 	ft_putchar_fd('%', 1);
 	cvut->len = 1;
 	return (1);
+}
+
+void	cleaner(t_conv *cvut)
+{
+	free(cvut->conv_flags);
+	free(cvut);
 }
 
 int	placeva(int *ret, t_conv *cvut, int i, va_list perc)

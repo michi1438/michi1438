@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:03:23 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/03/06 16:35:48 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 10:08:13 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ char	*freeandget_next_line(int fd, char *nline);
 void	ft_putstr_fd(char *str, int fd);
 char	*freeandreplace(char *oldstr, char *stradd, int ind);
 char	*rline(char *str, char *stradd);
-void	*ft_calloc(size_t nmemb, size_t size);
 int		readforterm(char *buf, int toggle);
 char	*replace_nline(int fd, char *nline);
 char	*ifbufhasreturn(t_strs *strings, char **statline, int i, int *red);

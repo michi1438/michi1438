@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:03:23 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 12:00:03 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 10:08:13 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 # endif
 
 # include <unistd.h>
-# include <stdio.h>
+# include "../libft/libft.h"
 # include <fcntl.h>
 # include <stdlib.h>
 
-typedef struct sctgnl {
+typedef struct sct1 {
 	char	*buf;
 	char	*line;
 }	t_strs;
@@ -30,11 +30,8 @@ typedef struct sctgnl {
 char	*get_next_line(int fd);
 char	*freeandget_next_line(int fd, char *nline);
 void	ft_putstr_fd(char *str, int fd);
-char	*ft_strjoin_gnl(char *s1, char *s2);
-size_t	ft_strlen_gnl(char *s);
 char	*freeandreplace(char *oldstr, char *stradd, int ind);
 char	*rline(char *str, char *stradd);
-void	*ft_calloc(size_t nmemb, size_t size);
 int		readforterm(char *buf, int toggle);
 char	*replace_nline(int fd, char *nline);
 char	*ifbufhasreturn(t_strs *strings, char **statline, int i, int *red);

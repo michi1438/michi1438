@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 20:40:03 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:45:39 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 09:43:29 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int	testprintargstr(const char *toconv, t_conv *cvut)
 {
 	t_toggler	*flg;
-	int			i;
 
-	i = 0;
 	flg = NULL;
 	flg = flglying(cvut->conv_flags, flg);
 	strshrinker(flg, cvut, toconv);
@@ -40,7 +38,7 @@ int	testprintargstr(const char *toconv, t_conv *cvut)
 
 void	hexshrinker(unsigned int toconv, t_conv *cvut, t_toggler *flg)
 {
-	if (flg->point == 1 && toconv >= 0)
+	if (flg->point == 1)
 		appwidspe(numlenneg(toconv, cvut), cvut->precis, flg, cvut);
 	if (flg->neg == 0 || (flg->neg == 1 && flg->point == 1))
 		ft_puthex_fd(toconv, 1, cvut);

@@ -6,7 +6,7 @@
 /*   By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 10:20:39 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/26 11:44:55 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 09:41:13 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ int	testprintarguns(unsigned int toconv, t_conv *cvut)
 
 void	spcplunopoint(t_toggler *flg, int toconv, t_conv *cvut)
 {
+	int	nlen;	
+
+	nlen = numlenneg(toconv, cvut);
 	if (flg->space == 1 || flg->plus == 1)
 	{
 		if (toconv > 0 && cvut->precis > cvut->wid)
@@ -43,14 +46,14 @@ void	spcplunopoint(t_toggler *flg, int toconv, t_conv *cvut)
 		if (toconv == 0 && cvut->wid <= cvut->precis)
 			cvut->len += 1;
 	}
-	else if (cvut->precis <= cvut->wid >= numlenneg(toconv, cvut))
+	else if (cvut->precis <= cvut->wid && cvut->wid >= numlenneg(toconv, cvut))
 	{
 		cvut->len = cvut->wid;
 		if (flg->space == 0 && flg->plus == 0 && toconv < 0)
-			if (cvut->wid < cvut->precis > numlenneg(toconv, cvut))
+			if (cvut->wid < cvut->precis && cvut->precis > nlen)
 				cvut->len += 1;
 	}
-	if (cvut->wid < numlenneg(toconv, cvut) > cvut->precis)
+	if (cvut->wid < nlen && nlen > cvut->precis)
 	{
 		cvut->len = numlenneg(toconv, cvut);
 		if (flg->space == 1 || flg->plus == 1)
