@@ -102,7 +102,7 @@ CC	ft_libft_printf_gnl/libft/Makefile	/^CC = gcc$/;"	m
 CC	push_swap_tester/files/Makefile	/^CC = cc$/;"	m
 CC	push_swap_tester/files/libft/Makefile	/^CC = gcc$/;"	m
 CFLAGS	Makefile	/^CFLAGS = -Werror -Wextra -Wall #-g3 #-fsanitize=leak$/;"	m
-CFLAGS	ft_libft_printf_gnl/Makefile	/^CFLAGS = #-Werror -Wextra -Wall $/;"	m
+CFLAGS	ft_libft_printf_gnl/Makefile	/^CFLAGS = -Werror -Wextra -Wall $/;"	m
 CFLAGS	ft_libft_printf_gnl/get_next_line/Makefile	/^CFLAGS = -Werror -Wall -Wextra #-g -fsanitize=address$/;"	m
 CFLAGS	ft_libft_printf_gnl/libft/Makefile	/^CFLAGS = -Werror -Wall -Wextra$/;"	m
 CFLAGS	push_swap_tester/files/Makefile	/^CFLAGS = -Wall -Werror -Wextra$/;"	m
@@ -274,7 +274,6 @@ ft_atoi	push_swap_tester/files/libft/ft_atoi.c	/^int	ft_atoi(char *str)$/;"	f	ty
 ft_atoi_with_range	push_swap_tester/files/srcs/share/utils.c	/^int	ft_atoi_with_range(char **str)$/;"	f	typeref:typename:int
 ft_bzero	ft_libft_printf_gnl/libft/ft_bzero.c	/^void	ft_bzero(void *s, int n)$/;"	f	typeref:typename:void
 ft_bzero	push_swap_tester/files/libft/ft_bzero.c	/^void	ft_bzero(void *s, size_t n)$/;"	f	typeref:typename:void
-ft_calloc	ft_libft_printf_gnl/get_next_line/get_next_line_utils_bonus.c	/^void	*ft_calloc(size_t nmemb, size_t size)$/;"	f	typeref:typename:void *
 ft_calloc	ft_libft_printf_gnl/libft/ft_calloc.c	/^void	*ft_calloc(size_t nmemb, size_t size)$/;"	f	typeref:typename:void *
 ft_calloc	push_swap_tester/files/libft/ft_calloc.c	/^void	*ft_calloc(size_t elementcount, size_t elementsize)$/;"	f	typeref:typename:void *
 ft_calloc_2	push_swap_tester/files/libft/ft_memory.c	/^static void	*ft_calloc_2(size_t elementcount, size_t elementsize)$/;"	f	typeref:typename:void *	file:
@@ -512,7 +511,6 @@ re	push_swap_tester/files/Makefile	/^re : fclean all$/;"	t
 re	push_swap_tester/files/libft/Makefile	/^re: fclean all$/;"	t
 readforterm	ft_libft_printf_gnl/get_next_line/get_next_line_utils_bonus.c	/^int	readforterm(char *buf, int toggle)$/;"	f	typeref:typename:int
 rot_to_ind_a	big_bigger_utils.c	/^void	rot_to_ind_a(t_stacks *stacks, int ind, int i)$/;"	f	typeref:typename:void
-rot_to_ind_b	big_bigger_utils.c	/^void	rot_to_ind_b(t_stacks *stacks, int ind, int i)$/;"	f	typeref:typename:void
 rr	op_both_stacks.c	/^void	rr(t_stacks *stacks)$/;"	f	typeref:typename:void
 rr	push_swap_tester/files/srcs/share/operation2.c	/^void	rr(t_deque *stack[2])$/;"	f	typeref:typename:void
 rr__rb	op_both_stacks_supl.c	/^void	rr__rb(t_stacks *stacks)$/;"	f	typeref:typename:void

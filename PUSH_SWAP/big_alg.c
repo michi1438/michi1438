@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:12:31 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/12 17:51:05 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/13 10:41:12 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ int	find_cheapest(t_stacks *stacks)
 void	push_index(int ind, int size, t_stacks *stacks)
 {
 	t_stack		*node_a;
-	t_stack		*next_a;
 	t_stack		*node_b;
 	int			i;
 
