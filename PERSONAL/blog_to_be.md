@@ -926,4 +926,18 @@ acceptor impurities, a p-type of semiconductor (positive charge excess) because 
 therefore letting current through these parts... Suprisingly those two semconductor types dont act the same way, next time we explore this 
 dichotomy in the study of a Diode or a Light emitting Diode. 
 
+# 14/04/2023
+The LED acronyme stands for light emiting diode, the way you go from diode to LEDs is basically by applying enough current through the led (it has 
+anode and a cathode, and therefore a way it is put in the circuit the long leg of the LeD is the anode "+" and has a ridge on the bottom of its cap
+on the same side), the reason for that side is that we want the electrons circulating to go from the high energy level ( this is confusing the "high 
+energy crystal we are talking about is the "n-type" or negatively charged crystal silicon, in that case the "p-type" the positively charged material 
+is the low energy level) to the low energy level. This means by the way that the anode is pluged in the positive side of the circuit.
+The reason it produces light, is, while the electron changes energy level it has to dissipate that energy somewhere, in a traditional incandescent 
+bulb that energy is in part radiated in light but also as heat in that case the light is actually a secondary effect of the bulb, the first is the 
+heat production (about 90% of the energy of an incadescent or halogen light bulb is "wasted" in our use case, in heat dissipation).
+The led in the contrary produces light at a more low level, the energy emited by the electron changing from high to low energy orbits 
+produces directly a photon (particle/energy), the energy given to that photon is proportional to gap in energy levels in the two crystals. 
+This energy given to the photon is tranlated to frequency, which our eyes and brain interpret as colors of light, the intensity of the light is a
+function of the power(watts) it receives, or is it tension(volts) or intensity(ampere).
+
 
