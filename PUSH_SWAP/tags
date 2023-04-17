@@ -510,6 +510,8 @@ re	ft_libft_printf_gnl/libft/Makefile	/^re: fclean all$/;"	t
 re	push_swap_tester/files/Makefile	/^re : fclean all$/;"	t
 re	push_swap_tester/files/libft/Makefile	/^re: fclean all$/;"	t
 readforterm	ft_libft_printf_gnl/get_next_line/get_next_line_utils_bonus.c	/^int	readforterm(char *buf, int toggle)$/;"	f	typeref:typename:int
+reset_for_nextbit	radix_sort.c	/^void	reset_for_nextbit(t_stacks *stacks, int i)$/;"	f	typeref:typename:void
+rot_shrinker	big_bigger_utils.c	/^void	rot_shrinker(t_stacks *stacks)$/;"	f	typeref:typename:void
 rot_to_ind_a	big_bigger_utils.c	/^void	rot_to_ind_a(t_stacks *stacks, int ind, int i)$/;"	f	typeref:typename:void
 rr	op_both_stacks.c	/^void	rr(t_stacks *stacks)$/;"	f	typeref:typename:void
 rr	push_swap_tester/files/srcs/share/operation2.c	/^void	rr(t_deque *stack[2])$/;"	f	typeref:typename:void
@@ -518,7 +520,7 @@ rr_c	op_both_stacks_check.c	/^void	rr_c(t_stacks *stacks)$/;"	f	typeref:typename
 rra	op_rotate.c	/^void	rra(t_stacks *stacks)$/;"	f	typeref:typename:void
 rra	push_swap_tester/files/srcs/share/operation2.c	/^void	rra(t_deque *stack[2])$/;"	f	typeref:typename:void
 rra_c	op_rotate_check.c	/^void	rra_c(t_stacks *stacks)$/;"	f	typeref:typename:void
-rra_sa_rrr	big_alg.c	/^void	rra_sa_rrr(t_stacks *stacks)$/;"	f	typeref:typename:void
+rra_sa_rrr	big_alg.c	/^void	rra_sa_rrr(t_stacks *stacks, int i, int size)$/;"	f	typeref:typename:void
 rrb	op_rotate.c	/^void	rrb(t_stacks *stacks)$/;"	f	typeref:typename:void
 rrb	push_swap_tester/files/srcs/share/operation2.c	/^void	rrb(t_deque *stack[2])$/;"	f	typeref:typename:void
 rrb_c	op_rotate_check.c	/^void	rrb_c(t_stacks *stacks)$/;"	f	typeref:typename:void

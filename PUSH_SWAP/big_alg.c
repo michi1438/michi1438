@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 10:44:52 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/13 10:45:08 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/17 12:06:13 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,11 +64,9 @@ int	find_cheapest(t_stacks *stacks)
 void	push_index(int ind, int size, t_stacks *stacks)
 {
 	t_stack		*node_a;
-	t_stack		*node_b;
 	int			i;
 
 	node_a = *stacks->stack_a;
-	node_b = *stacks->stack_b;
 	i = 0;
 	while (*node_a->index != ind)
 	{
@@ -82,21 +80,12 @@ void	push_index(int ind, int size, t_stacks *stacks)
 	}
 	else
 	{
-		while (i++ < size - 1)
-		{
-			if (node_b != NULL && *node_b->index < *lstlast(node_b, NULL)->index)
-				rrr(stacks);
-			else
-				rra(stacks);
-			node_a = *stacks->stack_a;
-			node_b = *stacks->stack_b;
-		}
-		rra_sa_rrr(stacks);
+		rra_sa_rrr(stacks, i, size);
 	}
 	pb(stacks);
 }
 
-void	rra_sa_rrr(t_stacks *stacks)
+void	rra_sa_rrr(t_stacks *stacks, int i, int size)
 {
 	t_stack		*node_a;
 	t_stack		*next_a;
@@ -105,14 +94,21 @@ void	rra_sa_rrr(t_stacks *stacks)
 
 	node_a = *stacks->stack_a;
 	node_b = *stacks->stack_b;
+	while (i++ < size - 1)
+	{
+		if (node_b != NULL && *node_b->index < *lstlast(node_b, NULL)->index)
+			rrr(stacks);
+		else
+			rra(stacks);
+		node_a = *stacks->stack_a;
+		node_b = *stacks->stack_b;
+	}
 	next_a = node_a->next;
 	last_b = lstlast(node_b, NULL);
 	if (next_a != NULL && *next_a->index < *node_a->index)
 		sa(stacks);
 	if (node_b != NULL && *last_b->index > *node_b->index)
-	{
 		rrr(stacks);
-	}
 	else
 		rra(stacks);
 }

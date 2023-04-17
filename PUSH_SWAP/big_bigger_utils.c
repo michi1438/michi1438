@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:25:24 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/12 17:35:30 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/17 12:16:01 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,7 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 	node_b = *stacks->stack_b;
 	while (i-- > 1)
 	{
-		if (node_b != NULL && *node_b->index > *(lstlast(node_b, NULL)->index))
-			rr(stacks);
-		else
-			ra(stacks);
+		rot_shrinker(stacks);
 		node_b = *stacks->stack_b;
 	}
 	node_a = *stacks->stack_a;
@@ -40,6 +37,17 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 			sa(stacks);
 	}
 	else if (node_a != NULL && *node_a->index != ind)
+		ra(stacks);
+}
+
+void	rot_shrinker(t_stacks *stacks)
+{
+	t_stack		*node_b;
+
+	node_b = *stacks->stack_b;
+	if (node_b != NULL && *node_b->index > *(lstlast(node_b, NULL)->index))
+		rr(stacks);
+	else
 		ra(stacks);
 }
 

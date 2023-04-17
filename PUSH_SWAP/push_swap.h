@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/12 17:29:29 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/17 12:24:49 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void		rot_to_ind_a(t_stacks *stacks, int ind, int i);
 void		give_index(int i, int min, t_stacks *stacks);
 void		give_index_b(int i, int max, t_stacks *stacks);
 void		rb_sb_ss(t_stacks *stacks, int index_max);
-void		rra_sa_rrr(t_stacks *stacks);
+void		rra_sa_rrr(t_stacks *stacks, int i, int size);
 void		rrb_sb(t_stacks *stacks);
 void		take_input(t_stacks *stacks);
 void		radix_sort(t_stacks *stacks);
@@ -107,5 +107,7 @@ void		rr__rb(t_stacks *stacks);
 void		ss__sb_c(t_stacks *stacks);
 int			no_other_candidat(t_stacks *stacks, int i, int size);
 void		empty_stack_a(t_stacks *stacks);
+void		rot_shrinker(t_stacks *stacks);
+void		reset_for_nextbit(t_stacks *stacks, int i);
 
 #endif
