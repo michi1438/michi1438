@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:03:23 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/04/13 10:08:13 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 22:48:41 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # endif
 
 # include <unistd.h>
-# include "../libft/libft.h"
+# include "../ft_main/libft.h"
 # include <fcntl.h>
 # include <stdlib.h>
 

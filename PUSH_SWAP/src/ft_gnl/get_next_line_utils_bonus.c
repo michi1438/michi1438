@@ -6,7 +6,7 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:05:04 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/04/13 10:08:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 22:47:23 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,18 +36,6 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	}
 	ptr[i] = '\0';
 	return (ptr);
-}
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	if (s == NULL)
-		return (0);
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
 }
 
 char	*freeandreplace(char *oldstr, char *stradd, int ind)

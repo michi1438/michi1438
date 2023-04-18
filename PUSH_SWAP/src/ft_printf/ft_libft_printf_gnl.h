@@ -6,19 +6,19 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 11:50:38 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/06 16:21:59 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 22:23:10 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_LIBFT_PRINTF_GNL_H
 # define FT_LIBFT_PRINTF_GNL_H
 
-# include "libft/libft.h"
+# include "../ft_main/libft.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdio.h>
-# include "get_next_line/get_next_line_bonus.h"
+# include "../ft_gnl/get_next_line_bonus.h"
 
 typedef struct sct {
 	char	type;
