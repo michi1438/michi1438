@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:25:24 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/17 12:16:01 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 13:48:46 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,5 @@ void	sorting(t_stacks *stacks)
 		size = lstsize_n_check(node_b, NULL);
 		index_max = find_largest_b(stacks);
 	}
+	pa(stacks);
 }
