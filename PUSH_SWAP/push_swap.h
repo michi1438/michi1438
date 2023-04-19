@@ -6,14 +6,14 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/09 23:17:14 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 22:41:11 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "ft_libft_printf_gnl/ft_libft_printf_gnl.h"
+# include "src/src.h"
 # include <limits.h>
 
 typedef struct s_stack{
@@ -89,11 +89,10 @@ void		push_index_b(int ind, int size, t_stacks *stacks);
 int			find_cheapest(t_stacks *stacks);
 int			find_cheapest_b(t_stacks *stacks);
 void		rot_to_ind_a(t_stacks *stacks, int ind, int i);
-void		rot_to_ind_b(t_stacks *stacks, int ind, int i);
 void		give_index(int i, int min, t_stacks *stacks);
 void		give_index_b(int i, int max, t_stacks *stacks);
 void		rb_sb_ss(t_stacks *stacks, int index_max);
-void		rra_sa_rrr(t_stacks *stacks);
+void		rra_sa_rrr(t_stacks *stacks, int i, int size);
 void		rrb_sb(t_stacks *stacks);
 void		take_input(t_stacks *stacks);
 void		radix_sort(t_stacks *stacks);
@@ -108,5 +107,7 @@ void		rr__rb(t_stacks *stacks);
 void		ss__sb_c(t_stacks *stacks);
 int			no_other_candidat(t_stacks *stacks, int i, int size);
 void		empty_stack_a(t_stacks *stacks);
+void		rot_shrinker(t_stacks *stacks);
+void		reset_for_nextbit(t_stacks *stacks, int i);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 16:25:24 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/10 16:44:09 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/18 13:48:46 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,12 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 	t_stack		*node_b;
 	t_stack		*nxt_b;
 
+	node_b = *stacks->stack_b;
 	while (i-- > 1)
-		ra(stacks);
+	{
+		rot_shrinker(stacks);
+		node_b = *stacks->stack_b;
+	}
 	node_a = *stacks->stack_a;
 	nxt_a = node_a->next;
 	node_b = *stacks->stack_b;
@@ -36,29 +40,15 @@ void	rot_to_ind_a(t_stacks *stacks, int ind, int i)
 		ra(stacks);
 }
 
-void	rot_to_ind_b(t_stacks *stacks, int ind, int i)
+void	rot_shrinker(t_stacks *stacks)
 {
-	t_stack		*node_a;
-	t_stack		*nxt_a;
 	t_stack		*node_b;
-	t_stack		*nxt_b;
 
 	node_b = *stacks->stack_b;
-	while (i-- > 1)
-		rb(stacks);
-	node_a = *stacks->stack_a;
-	nxt_a = node_a->next;
-	node_b = *stacks->stack_b;
-	nxt_b = node_a->next;
-	if (nxt_b != NULL && *nxt_b->index == *node_b->index - 1)
-	{
-		if (nxt_a != NULL && *nxt_a->index > *node_a->index)
-			ss(stacks);
-		else
-			sb(stacks);
-	}
-	else if (*node_b->index != ind)
-		rb(stacks);
+	if (node_b != NULL && *node_b->index > *(lstlast(node_b, NULL)->index))
+		rr(stacks);
+	else
+		ra(stacks);
 }
 
 void	give_index(int i, int min, t_stacks *stacks)

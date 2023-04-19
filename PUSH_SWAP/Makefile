@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 10:56:05 by mguerga           #+#    #+#              #
-#    Updated: 2023/04/10 16:57:37 by mguerga          ###   ########.fr        #
+#    Updated: 2023/04/19 08:28:16 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,23 +36,27 @@ OBJB = $(SRCB:.c=.o)
 
 all: $(NAME) $(NAMEB) 
 
-libf_printf_gnl:
-	make -C ./ft_libft_printf_gnl
+$(NAME): $(OBJ)
+	make -C ./src
+	$(CC) $(CFLAGS) $(OBJ) -Lsrc/ -lft -o $(NAME)
 
-$(NAME): libf_printf_gnl $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -Lft_libft_printf_gnl/ -lftprintf -o $(NAME)
-
-$(NAMEB): libf_printf_gnl $(OBJB)
-	$(CC) $(CFLAGS) $(OBJB) -Lft_libft_printf_gnl/ -lftprintf -o $(NAMEB)
+$(NAMEB): $(OBJB)
+	make -C ./src
+	$(CC) $(CFLAGS) $(OBJB) -Lsrc/ -lft -o $(NAMEB)
 
 clean:
 	rm -rf $(OBJ)
 	rm -rf $(OBJB)
+	make clean -C ./src
 
-fclean: clean
+fclean: 
+	rm -rf $(OBJ)
+	rm -rf $(OBJB)
 	rm -rf $(NAME) 
 	rm -rf $(NAMEB) 
-	make fclean -C ./ft_libft_printf_gnl
+	make fclean -C ./src
 
 re: fclean
 	make
+
+.PHONY: clean fclean re bonus src

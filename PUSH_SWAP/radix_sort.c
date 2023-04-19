@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 15:18:40 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/09 23:45:56 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/17 12:24:17 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,25 +25,28 @@ void	radix_sort(t_stacks *stacks)
 	bufsize = size;
 	while (i < 9)
 	{
-		while (size > 1)
+		while (size-- > 1)
 		{
 			if ((*node_a->index >> i & 1) == 0)
 				pb(stacks);
 			else
 				ra(stacks);
 			node_a = *stacks->stack_a;
-			size--;
 		}
-		if (i < 8)
-			empty_stack_b(stacks);
-		else
-		{
-			empty_stack_a(stacks);
-			sorting(stacks);
-		}
+		reset_for_nextbit(stacks, i++);
 		size = bufsize;
 		node_a = *stacks->stack_a;
-		i++;
+	}
+}
+
+void	reset_for_nextbit(t_stacks *stacks, int i)
+{
+	if (i++ < 8)
+		empty_stack_b(stacks);
+	else
+	{
+		empty_stack_a(stacks);
+		sorting(stacks);
 	}
 }
 

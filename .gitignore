@@ -2,6 +2,7 @@
 *.o
 *.a
 **/push_swap_tester/
-**/minilibx*/
-*.tgz
 *.txt
+*.out
+*.tgz
+**/minilibx*/
