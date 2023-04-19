@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_libft_printf_gnl.h                              :+:      :+:    :+:   */
+/*   printf.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 11:50:38 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/18 22:23:10 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:53:35 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_PRINTF_GNL_H
-# define FT_LIBFT_PRINTF_GNL_H
+#ifndef PRINTF_H
+# define PRINTF_H
 
 # include "../ft_main/libft.h"
 # include <unistd.h>

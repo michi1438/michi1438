@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 10:56:05 by mguerga           #+#    #+#              #
-#    Updated: 2023/04/18 22:56:57 by mguerga          ###   ########.fr        #
+#    Updated: 2023/04/19 08:28:16 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,13 +36,12 @@ OBJB = $(SRCB:.c=.o)
 
 all: $(NAME) $(NAMEB) 
 
-src:
+$(NAME): $(OBJ)
 	make -C ./src
-
-$(NAME): src $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -Lsrc/ -lft -o $(NAME)
 
-$(NAMEB): src $(OBJB)
+$(NAMEB): $(OBJB)
+	make -C ./src
 	$(CC) $(CFLAGS) $(OBJB) -Lsrc/ -lft -o $(NAMEB)
 
 clean:

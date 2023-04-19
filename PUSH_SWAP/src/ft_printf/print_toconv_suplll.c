@@ -6,11 +6,11 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 20:42:01 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/04/13 09:52:01 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:46:17 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 void	dealwithpospoints(t_toggler *flg, t_conv *cvut, int toconv)
 {

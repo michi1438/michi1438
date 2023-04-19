@@ -6,11 +6,11 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 18:17:34 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:44:30 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:44:37 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 int	numlen(unsigned long ln, t_conv *cvut)
 {
