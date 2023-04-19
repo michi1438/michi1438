@@ -6,11 +6,11 @@
 /*   By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:26:02 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/02 19:36:54 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:47:08 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 int	ft_printf(const char *str, ...)
 {

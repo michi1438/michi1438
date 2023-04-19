@@ -6,11 +6,11 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 13:07:58 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:47:26 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:47:28 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 int	numbertypes(t_conv *cvut, long long toconv, int i)
 {

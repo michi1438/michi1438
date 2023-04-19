@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printparser_supl.c                                 :+:      :+:    :+:   */
+/*   src.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
+/*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/19 13:11:24 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/01/26 11:48:22 by mguerga          ###   ########.fr       */
+/*   Created: 2023/04/18 22:41:35 by mguerga           #+#    #+#             */
+/*   Updated: 2023/04/19 08:48:41 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#ifndef SRC_H
+# define SRC_H
 
-int	proxylengthcnt(const char *str, int i)
-{
-	int	cnt;
+# include "ft_gnl/get_next_line_bonus.h"
+# include "ft_main/libft.h"
+# include "ft_printf/printf.h"
 
-	cnt = 1;
-	while (!(ft_isalpha(str[i])) && str[i++] != '%')
-		cnt++;
-	return (cnt);
-}
+#endif

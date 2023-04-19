@@ -6,11 +6,11 @@
 /*   By: xbeheydt <xbeheydt@42lausanne.ch>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 20:44:59 by xbeheydt          #+#    #+#             */
-/*   Updated: 2023/04/13 09:48:20 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:46:31 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 int	testprintargint(int toconv, t_conv *cvut)
 {

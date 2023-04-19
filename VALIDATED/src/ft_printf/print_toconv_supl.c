@@ -6,10 +6,10 @@
 /*   By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 08:15:45 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/26 11:45:19 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:45:44 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ft_libft_printf_gnl.h"
+#include "printf.h"
 
 void	hexprintshrinker(t_toggler *flg, unsigned int toconv, t_conv *cvut)
 {

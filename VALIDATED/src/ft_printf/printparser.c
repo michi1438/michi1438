@@ -6,11 +6,11 @@
 /*   By: mguerga <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:30:04 by mguerga           #+#    #+#             */
-/*   Updated: 2023/01/26 11:47:53 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 08:47:42 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"ft_libft_printf_gnl.h"
+#include	"printf.h"
 
 char	*flag_parser(const char *str, int i)
 {
