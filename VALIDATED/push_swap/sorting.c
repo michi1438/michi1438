@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 14:06:07 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/18 13:50:12 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/19 11:50:30 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ void	start_sort(t_stacks *stacks)
 			sa(stacks);
 	}
 	else if (lstsize_n_check(node_a, NULL) < 7)
-		under_six(stacks);
+	{
+		if (is_ordered(stacks) != 0)
+			under_six(stacks);
+	}
 	else if (lstsize_n_check(node_a, NULL) < 200)
 	{
 		if (is_ordered(stacks) != 0)
