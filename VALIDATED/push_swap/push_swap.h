@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:55:27 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/18 22:41:11 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/22 12:16:22 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,7 @@ int			no_other_candidat(t_stacks *stacks, int i, int size);
 void		empty_stack_a(t_stacks *stacks);
 void		rot_shrinker(t_stacks *stacks);
 void		reset_for_nextbit(t_stacks *stacks, int i);
+void		*p_malloc(size_t size);
+void		*p_malloc_clean(size_t size, t_stacks *stacks);
 
 #endif

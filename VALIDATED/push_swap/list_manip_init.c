@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 18:14:05 by mguerga           #+#    #+#             */
-/*   Updated: 2023/03/28 23:23:05 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/22 12:55:29 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ t_stack	*lstnew(int *value)
 {
 	t_stack	*ptr;
 
-	ptr = (t_stack *)malloc(sizeof(t_stack));
+	ptr = (t_stack *)p_malloc(sizeof(t_stack));
 	if (ptr == NULL)
 		ft_err();
 	ptr->next = NULL;
 	ptr->prev = NULL;
-	ptr->index = malloc(sizeof(int));
+	ptr->index = p_malloc(sizeof(int));
 	ptr->content = value;
 	return (ptr);
 }

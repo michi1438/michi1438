@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 16:39:45 by mguerga           #+#    #+#             */
-/*   Updated: 2023/04/06 13:19:12 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/04/22 12:34:52 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,20 @@ int	pars_checker(int ac, char **av)
 {
 	t_stacks	*stacks;
 
-	stacks = malloc(sizeof(t_stacks));
-	stacks->stack_a = malloc(sizeof(t_stack));
-	stacks->stack_b = malloc(sizeof(t_stack));
+	stacks = p_malloc(sizeof(t_stacks));
+	stacks->stack_a = p_malloc(sizeof(t_stack));
+	stacks->stack_b = p_malloc(sizeof(t_stack));
 	if (ac == 2)
 		return (_pars_one_check(av[1], stacks));
 	else if (ac > 2)
 		return (_pars_mult_check(ac, av, stacks));
 	else if (ac == 1)
+	{
+		cleanlst(stacks);
 		return (0);
+	}
 	else
-		return (0);
+		return (1);
 }
 
 int	_pars_one_check(char *av, t_stacks *stacks)
@@ -56,12 +59,15 @@ int	_pars_one_check(char *av, t_stacks *stacks)
 		j = 0;
 		while (splited[i][j] != '\0')
 			j++;
-		value = malloc(sizeof(int));
+		value = p_malloc_clean(sizeof(int), stacks);
 		*value = atoi_n_check(splited[i++]);
 		lstadd_back(stacks->stack_a, lstnew((int *)value));
 	}
-	take_input(stacks);
-	_clean_dbl(splited);
+	if (splited[0] != NULL)
+	{
+		take_input(stacks);
+		_clean_dbl(splited);
+	}
 	cleanlst(stacks);
 	return (0);
 }
@@ -78,7 +84,7 @@ int	_pars_mult_check(int ac, char **av, t_stacks *stacks)
 		j = 0;
 		while (av[i][j] != '\0')
 			j++;
-		value = malloc(sizeof(int));
+		value = p_malloc_clean(sizeof(int), stacks);
 		*value = atoi_n_check(av[i]);
 		lstadd_back(stacks->stack_a, lstnew(value));
 		i++;
