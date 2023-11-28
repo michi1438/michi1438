@@ -6,7 +6,7 @@
 /*   By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 15:59:45 by mguerga           #+#    #+#             */
-/*   Updated: 2023/10/24 11:07:37 by mguerga          ###   ########.fr       */
+/*   Updated: 2023/11/28 16:02:47 by mguerga          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
+#include <sys/wait.h>
 
 int ft_putstr(char *str)
 {
@@ -50,8 +51,7 @@ int	cmd_pipes_ratio(int *n_pipes, int *n_cmd)
 	else
 	{
 		ft_putstr("err; n_cmd does'nt fit the number of pipes! \n");
-		*n_pipes = 0;
-		*n_cmd = 0;
+		*n_pipes = *n_cmd = 0;
 		return (1);
 	}
 }
@@ -60,22 +60,42 @@ int	exec_wrap(char ***cmds, char **env, int *n_cmd, int *n_pipes)
 {
 	int i;
 	int fd[2];
+	int	prevpipe = dup(0);
 
 	i = 0;
-	if (pipe(fd) == -1)
-		perror("pipe");
-	printf("fd[0] = %d\n", fd[0]);
-	printf("fd[1] = %d\n", fd[1]);
-	while (i < *n_cmd)
+	while (i < *n_cmd - 1)
 	{
-		if (*n_cmd > 1)
-			dup2(fd[1], fd[0]);	
+		if (pipe(fd) == -1)
+			perror("pipe");
 		if (fork() == 0)
 		{
+			close (fd[0]);
+			dup2(prevpipe, STDIN_FILENO);
+			close (prevpipe);
+			dup2(fd[1], STDOUT_FILENO);
+			close (fd[1]);
 			execve(cmds[i][0], cmds[i], env);
 			perror("execve");
 		}	//interpret and free cmds up to here... 
+		else
+		{
+			close (fd[1]);
+			dup2(fd[0], prevpipe);
+		}
 		i++;
+	}
+	if (fork() == 0)
+	{
+		dup2(prevpipe, STDIN_FILENO);
+		close (prevpipe);
+		execve(cmds[i][0], cmds[i], env);
+		perror("execve");
+	}
+	else
+	{
+		close (prevpipe);
+		while (wait(NULL) != -1)
+			;
 	}
 	*n_cmd = 0;
 	*n_pipes = 0;
