@@ -6,7 +6,7 @@
 #    By: mguerga <mguerga@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 10:56:05 by mguerga           #+#    #+#              #
-#    Updated: 2023/04/22 12:47:42 by mguerga          ###   ########.fr        #
+#    Updated: 2023/04/22 18:19:58 by mguerga          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAMEB = checker
 
 CC = gcc
 
-CFLAGS = -Werror -Wextra -Wall #-g3 -fsanitize=leak
+CFLAGS = -Werror -Wextra -Wall -g3 -fsanitize=leak
 
 SRC = main.c err_handling.c parsing.c cleaner.c checking_n_atoi.c \
 	  list_manip_init.c op_both_stacks.c big_alg.c pre_sort_utils.c \
