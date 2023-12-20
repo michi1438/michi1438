@@ -940,4 +940,13 @@ produces directly a photon (particle/energy), the energy given to that photon is
 This energy given to the photon is tranlated to frequency, which our eyes and brain interpret as colors of light, the intensity of the light is a
 function of the power(watts) it receives, or is it tension(volts) or intensity(ampere).
 
-
+# 20/12/2023  -- The monster in my head
+Since the last time I wrote, it's basically been 8 months, I've been through periods of work and other of "letting go and generaly having no ambition
+for myself". the last few weeks I've tried again but to no avail, as I am striping every good resolution I had as I go...
+Lattely I've realised, what seems to be accuracy about my opinion on my judjement of others, I'm thinking that those judjement if applied to me, 
+would make me a better person and the better person from my unexpressed opinion, wich is good it means living in accordance with yourself...
+Once again I'll try being this "human in my head" it does'nt make me "stuck up" it's part of a whole, happy, knowledgable, athletic, by mainly
+emphasyzing on higher pleasure, reading, working, going up a mountain as a contrary to the both easily accessed and faintely rewarding cigarettes, 
+movies, series, hunching over, videogames, fast food... 
+I'm treating this as my last chance, "what if this was my last chance before I droped the idea of who I could be...", next time I'm seeing a 
+professional. This is a question that came over and over on this page, let's try giving it substance and value. :)
