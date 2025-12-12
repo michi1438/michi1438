@@ -21,10 +21,15 @@ We live in a world where it is well looked upon to procrate when we dont have en
 **THEME_1&2_Q&A**
 Q:  When two parties genuinely disagree about who wronged whom, how is "truth" established without courts?
 A:  Well, first of all when we do have courts and it has ruled who is to say that we have truth, and once sentencing has been done isn't there multiple truths if 2 or more parties **GENUINELY** Disagree...
-Truth is established by the parties that are the most intrested and by their hired third party, that is where the beauty of sush a (non)system comes in, their judgement is both passionate and measured by the empiricaly known backlash that an overly-hard judgement may bring... this cleaves with our blind system that bases it self on outdated rules that don't always fit the current moral standards, counters new rules or directly gives loopholes to a clever but publicly seen as evil defence. "find study cases that kind of showcase that" (#answerd, #meta, #fundamental, #world-building)
+Truth is established by the parties that are the most intrested and by their hired third party, that is where the beauty of sush a (non)system comes in, their judgement is both passionate and measured by the empiricaly known backlash that an overly-hard judgement may bring... this cleaves with our blind system that bases it self on outdated rules that don't always fit the current moral standards, counters new rules or directly gives loopholes to a clever but possibly evil defence. 
+Law is often seen and pictured as trying to fit the legal text to the desirable judgment, not only is it a quirky funny representation of the imperfect thing that is law, legal text and judgement, it shows the ridilousness of trying to fit something that is intangible and so prone to opinion and subjectivity in a strict and tight medium of everexpending text that keeps retroactively correcting itself as the values of a people change.. 
+"find study cases that kind of showcase that" (#answerd, #meta, #fundamental, #world-building)
 
 Q:  What happens when someone like Roger makes a mistake and eliminates the wrong person?
-A:  (#unanswerd)
+A:  This is a very broad question, with multiple answers.
+If he is good enough at his job he probably will not make a mistake and if he did would then not get caught, edge case, may be a good theme to explore...
+If he did get caught, that would probably be a sign that he is not very good at his job. As a whole him getting killed might be a good thing for hummanity, it will show that this line of work isn't a walk in the parc that it should be taken seriously, that these profession are not above any other, that it is a high risk high reward... All in all it may be akin to a virtuous cycle of a positive feedback loop, one mistake in the loop doesn't break the loop, but strenghtens it... In this case the Roger like person, making a mistake is a blessing because it will remind everybody of the dangers of making a mistake, if it doesn't on the first error then on the next...
+This is all the utopist point of view this cycle or this loop could oviously be a vicious cycle I think I want to take the Utopist side, I like it better...(#unanswerd)
 
 Q:  How do you handle accidents vs. intentional harm when there's no legal framework to distinguish them?
 A:  
