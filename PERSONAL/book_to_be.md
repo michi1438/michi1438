@@ -1,5 +1,8 @@
 The style would be, Social Fiction, looks like science fiction but it has little technological advancement, it mainly focusses on social differences, ethical dilema and a challenge to our society's paradigm... Turns out the "name" already exists as Social Science Fiction, typiclaly Orwell, Huxley, Clark are explorers of those subject !
 
+censorship is the first step to martyrship, censorship can give value to your work, it can add a new meaning, everybody loves an underdog... as it did I think to Master and margerita.
+Having the right ennemies in history is important !!
+
 **THEME_1**
 Story of a man, in a modern world where there are no rule, no governing power, the main character (Roger) would be a pass-time theorist, or someone with a role of the sort, maybe a problem solver for others a kind of lawyer in a world with no law, a dancer of the dangers of a world who self balances with rules not set by any man but by man's nature... 
 One way to describe this is to talk of anarchism, and this would be in all fairness, another would be to talk of "raw freedom".
