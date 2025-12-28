@@ -17,3 +17,122 @@ I might need to ask a bunch of those question and kind of sculpt a world from th
 
 **NO_THEME**    (just an idea)
 We live in a world where it is well looked upon to procrate when we dont have enough to feed every one, and once we realise these children are ill or generaly unfit for the world in autonomy we consider it cruel to not take extensive care of them. The demographics are getting out of hand. In such a world individuals are as big a polluter as big corporations. Having less kids, when I think about it, does not seem to be the more human thing to do (having kids is the most human thing to do) but it might be the right thing to do. I've not often seen quality in quantity, rather it be education or gene pools it seems to me we would gain as a society to not make as many fucking babies. And once I have said this, usualy the first bullshit counterpoint is that it's not our "advanced country" that polute the world, fuck you, you said "advanced" !! Try to transcend, don't see this as a me vs them problem, but more as a what can I do about it, it's simple really if you are better then the third world country's population help them out, stop making babies start adopting. If your not, same thing, stop making more average babies, start adopting !!
+
+**THEME_1&2_Q&A**
+Q:  When two parties genuinely disagree about who wronged whom, how is "truth" established without courts?
+A:  Well, first of all when we do have courts and it has ruled who is to say that we have truth, and once sentencing has been done isn't there multiple truths if 2 or more parties **GENUINELY** Disagree...
+Truth is established by the parties that are the most intrested and by their hired third party, that is where the beauty of sush a (non)system comes in, their judgement is both passionate and measured by the empiricaly known backlash that an overly-hard judgement may bring... this cleaves with our blind system that bases it self on outdated rules that don't always fit the current moral standards, counters new rules or directly gives loopholes to a clever but possibly evil defence. 
+Law is often seen and pictured as trying to fit the legal text to the desirable judgment, not only is it a quirky funny representation of the imperfect thing that is law, legal text and judgement, it shows the ridilousness of trying to fit something that is intangible and so prone to opinion and subjectivity in a strict and tight medium of everexpending text that keeps retroactively correcting itself as the values of a people change.. 
+"find study cases that kind of showcase that" (#answerd, #meta, #fundamental, #world-building)
+
+Q:  What happens when someone like Roger makes a mistake and eliminates the wrong person?
+A:  This is a very broad question, with multiple answers.
+If he is good enough at his job he probably will not make a mistake and if he did would then not get caught, edge case, may be a good theme to explore...
+If he did get caught, that would probably be a sign that he is not very good at his job. As a whole him getting killed might be a good thing for hummanity, it will show that this line of work isn't a walk in the parc that it should be taken seriously, that these profession are not above any other, that it is a high risk high reward... All in all it may be akin to a virtuous cycle of a positive feedback loop, one mistake in the loop doesn't break the loop, but strenghtens it... In this case the Roger like person, making a mistake is a blessing because it will remind everybody of the dangers of making a mistake, if it doesn't on the first error then on the next...
+This is all the utopist point of view this cycle or this loop could oviously be a vicious cycle I think I want to take the Utopist side, I like it better...(#unanswerd)
+
+Q:  How do you handle accidents vs. intentional harm when there's no legal framework to distinguish them?
+A:  
+
+Q:  How do large-scale projects happen? (bridges, hospitals, research requiring years of collaboration)
+A:  
+
+Q:  What motivates people to do tedious but necessary work (sewage, garbage)?
+A:  
+
+Q:  How does knowledge get preserved and transmitted without institutions?
+A:  (#important, #fundamental)
+
+Q:  What stops charismatic individuals from building cult-like followings that become de facto governments?
+A:  (#important, #fundamental)
+
+Q:  How do children learn the "implicit rules" if they're never written down?
+A:  They don't or "implicit rules" are learned implicitly ^^, this is kind of a non-sensical question, "implicit rules" would not be written down, those would have been called "explicit rules", and that is kind of the point, we don't want those in this scenario, the "implicit rules" are more akin to the fundemental "laws" of natures and human nature, feelings and personal, "cultural" and/or any other kind of influence on moral values... 
+Rules that would be written down or given as a standard in any form, would not be common, and usually no direct judgement would be based on such rules, the few stories that there would be of such "written down rules" would be anecdotic and affiliated with revolutionary groups, cult-like followings, and would be word of mouth and therefore lost rapidly or in a cult complex that stored information for centuries before disbanding like all the others, there would be a sort of "archeologist" specificaly intrested in what the world was like before and this would probably be an important work too colporteur of information in the form of storytelling... (#meta, #answerd)
+
+Q:  The word "law", in this world, would not exist or at best have a very different meaning, what are other words like this that would either have to not appear in the book or have to be "reinvented"?
+A:  
+
+Q:  What happens to people who can't function in this system (severe disabilities, elderly with dementia)?
+A:  Other fascinating subject of mine, probably part of the, setting of this world... (#unanswerd #fundamental #important)
+
+Q:  If there are no banks "too big," how does capital accumulate for major investments?
+A:  
+
+Q:  What's the incentive to innovate or take risks if there's no patent protection?
+A:  
+
+Q:  How do you trade with the outside world if one exists?
+A:  
+
+Q:  How did humanity develop agriculture-dependent discoveries (metallurgy requires settled forges, right?) while staying nomadic?
+A:  (#important #unanswerd #fundamental)
+
+Q:  What's the energy source? Solar? Portable fusion? Biological?
+A:  (#detail)
+
+Q:  How do you maintain and repair complex technology without workshops?
+A:  (#important #unanswerd #fundamental)
+
+Q:  Do people travel in groups, families, alone? What determines group composition?
+A:  (#important #unanswerd #fundamental)
+
+Q:  How do romantic relationships and child-rearing work when everyone's mobile?  
+A:  
+
+Q:  Is there any sense of "home" or do people genuinely never return to the same place?
+A:  (#storybuilding, #important)
+
+Q:  How do you become a doctor or engineer without universities or apprenticeships in one location?
+A:  
+
+Q:  Where are the "libraries" of human knowledge?
+A:  
+
+Q:  How specialized can skills become when you can't rely on others being nearby?
+A:  
+
+Q:  What do people eat? Are they hunter-gatherers? Do they carry food? Trade for it? 
+A:  
+
+Q:  How does healthcare work, especially surgery or childbirth?
+A:  
+
+Q:  What about manufacturing? Is everything 3D-printed on demand?
+A:  
+
+Q:  What historical event or philosophical shift led humanity down this path instead of ours?
+A:  (#fundamental #WHY #important #storybuilding)
+
+Q:  Is this Earth, or a colony world where they chose differently from the start?
+A:  
+
+Q:  Are there other societies that developed differently they're aware of?
+A:  
+
+Q:  You mention natural selection making people "smarter and less aggressive" - but isn't cooperation what made humans successful? Would this society select against social bonds?
+A:  (#idontunderstandit)
+
+Q:  What about people who want stability, roots, or authority? Are they outcasts?
+A:  Yes, (#unanswerd, #obvious)
+
+Q:  How does art, music, or culture develop without cultural centers?
+A:  
+
+Q:  What's your society's biggest vulnerability that inhabitants might not see?
+A:  (#fundamental #WHY #important #storybuilding)
+
+Q:  What would an outsider find horrifying that locals consider normal?
+A:  
+
+Q:  What problem does your society solve that ours can't, and what problem does it create that we don't have?
+A:  
+
+Q:  Are you showing this world through a crisis (something breaking) or through normal life (showing it works)?
+A:  Through normal life, (#unanswerd, #important, #storybuilding)
+
+Q:  Is there an "outside" world to contrast with, or is this all humanity?
+A:  
+
+Q:  What does your protagonist want that this society makes difficult or easy?
+A:  
