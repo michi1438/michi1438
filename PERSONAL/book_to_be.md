@@ -39,7 +39,21 @@ This is the utopist point of view, this cycle or this loop could oviously be a v
 A:  This was mostly answered in the previous question, intentional harm is the only one that asks for repercutions, the accidents don't induce as much hatred and don't bring people to seek justice. The question and the answer remain the same, the key is in people's judjement being tempered by the potentiel of future judgement by others, an eye for an eye is a fair trade anything else needs balancing. (#tangeant) There is no legal framework, but maybe an emotional framework... trying to distinguish emotional from purely logical systems is what this question comes down to, our legal system is an aim at a purely logical side (legal text), that is used as a frame for lawyers, judges and jury to debate the emotional aspect often under the pretext of logical absolutes (when you think about it this is a good atempt at trying to reconciliate logic and emotion). In my world justice is understood as a fluid thing and therefore doesn't try to frame it in logic, all judgement is purely emotional and only tempered by the potential for repercusion and people like rogers who try to apply an empirical logic to human emotion. It is intresting because we often act in "the heat of the moment"(when we are only acting on emotion), our judicial system is supposed to keep us from doing this, yet it doesn't work. And in my world what keeps people from acting on solely their emotion, the unbalance that seems to come through here may come from the fact that in our judicial system you can inflict damage and receive a minimal sentencing.
 
 **Q:  How do large-scale projects happen? (bridges, hospitals, research requiring years of collaboration)**
+A:  By cumulative work put in a common objective, the direction is flexible and changes from people to people, social pressure is the main incentive to get others involved, not everyone does it but it is seen as one of the greatest selfless act... 
+
+In general I might be getting stuck on what isn't possible, maybe better off not going in depth on the aspects that don't fit yet and get the general idea, let the reader create and imagine the missing link or dismiss it completly... (#tangeant)
+
+In our case phones or any kind of small and cumulative innovation in manufacturing is hard to imagine, comparatively bridges and hospital are easier to imagine. Bridges would be limited by the intrest someone would have to make it solid enough to last for years, one would only make it good enough for his needs and maybe a bit more but not much more as we do with a lucrative business point of view. For hospitals the main bottle neck is the manufacturing once you have the small element and the drugs doctors are easy to come by, traveling would probably make them better doctors. And finally research would be easy once internet and decentralization of your work is possible, again probably not as much output or volume but a lot more quality, there is no need for it, nobody is paying for it, and it is mostly for personal satisfaction of the researcher this in turn makes it a lot more genuine and honnest unlike the research in some areas in our world (pharma).
+Phones being one example of highly intricate manufacturing, they are the link that make everything stick, if you can explain this everything works, so think about it and make it clean (#answerd, #meta, #fundamental, #detail)
+
+**Q:  How are phone built ? a concrete exemple that sets the general motion of intricate manufacturing with a lot of cumulative knowledge and production specialists...**
 A:  
+
+**Q:  How does the internet work with no centralized data tower ?**
+A:  Go throught each computer chaining throught wireless short to mid distance connections between personal devices.. 
+
+What are the languages or is there only one, if everyone is traveling all the time would'nt you get a accelerated mondialisation ??
+What about food how do you get agriculture if you don't settle ? Maybe through selecting an planting as you travel leaving crops to grow naturaly for the next travelers and these selections naturaly enhances those plants...
 
 **Q:  What motivates people to do tedious but necessary work (sewage, garbage)?**
 A:  
