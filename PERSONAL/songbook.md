@@ -32,5 +32,27 @@ I probably need some air,
 I don't want you to want to... hear,
 ..my blues...
 
+**Life is a whore**
+I was walking down the street,
+Surprisingly not feeling so sweet.
+
+When this guy walked up to me,
+and asked me "would you buy some weed",
+
+Well in the state I was I couldn't say no,
+but I'd really have rathered blow,
+
+If you ever feel so low,
+just remember life's a whore.
+And you may just want to pay some more,
+before she can make you whole.
+
+**back on the beach**
+Back on the beach were I swear I never went,
+laid a girl that I swear I never never met,
+
+But it was all in a dream, or in my head...
+
+
 **THEMES**
 - unclear messages, interpretable, contradictory, childish, happy sad, melancoly, letting go, simplicity, cool riffs, more chords...
