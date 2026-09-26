@@ -50,6 +50,8 @@ before she can make you whole.
 **back on the beach**
 Back on the beach were I swear I never went,
 laid a girl that I swear I never never met,
+big Brady eyes I swear we're looking at me,
+those butterflies I swear were there to see, 
 
 But it was all in a dream, or in my head...
 
